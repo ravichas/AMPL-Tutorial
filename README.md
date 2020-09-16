@@ -1,2 +1,2 @@
 # AMPL
-Copy of AMPL Repository from AMPL 
+Collection of experimental AMPL tutorial COLAB notebooks 
