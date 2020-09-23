@@ -4,7 +4,7 @@ The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an 
 
 This repository contains a collection of experimental AMPL tutorial COLAB notebooks. We suggest you the following order for AMPL tutorials:
 
-* **Tutorial-01 (AMPL-COLAB setup):** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_COLAB.ipynb : This COLAB notebook will setup AMPL and make a copy of AMPL installation for later use. Plesae note that you need a Gmail account (personal account; institution Gmail account not tested) as this Notebook will store AMPL installation files on your Google Drive. 
+* **Tutorial-00 (Basic COLAB Tutorial):** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
 
 * **Tutorial-01 (AMPL-COLAB setup):** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_make_AMPL_Google_Drive.ipynb : This COLAB notebook will setup AMPL and make a copy of AMPL installation for later use. Plesae note that you need a Gmail account (personal account; institution Gmail account not tested) as this Notebook will store AMPL installation files on your Google Drive. 
 
