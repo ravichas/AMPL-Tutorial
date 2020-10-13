@@ -7,11 +7,12 @@ This repository contains a collection of experimental AMPL tutorial COLAB notebo
 
 * **Tutorial-00:** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
 
-* **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
+* **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): 
+![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/DELANY.PNG)
+For background information
+This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
 
 * **Tutorial-02:** https://github.com/ravichas/AMPL-Tutorial/blob/master/02_Delaney_Example_AMPL_GPU.ipynb (**Mode: AMPL_GPU; Time: ~ 2 minutes**): This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL_GPU will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
-
-
 
 * **Tutorial-03:** https://github.com/ravichas/AMPL-Tutorial/blob/master/03_CHEMBL26_SCN5A_IC50_example.ipynb (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
