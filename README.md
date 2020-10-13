@@ -10,4 +10,8 @@ This repository contains a collection of experimental AMPL tutorial COLAB notebo
 
 * **Tutorial-02:** https://github.com/ravichas/AMPL-Tutorial/blob/master/02_Delaney_Example_AMPL_GPU.ipynb (**Mode: AMPL_GPU; Time: ~ 2 minutes**): This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL_GPU will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
 
+![Test Image 1](Img/SCN5A.IMG)
+
+* **Tutorial-03:** https://github.com/ravichas/AMPL-Tutorial/blob/master/03_CHEMBL26_SCN5A_IC50_example.ipynb (**Mode: AMPL_GPU; Time: ~ 18 minutes**): This AMPL-COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. chEMBL database is the source of the binding affinities (pIC50)
+
 
