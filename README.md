@@ -3,7 +3,7 @@
 
 The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery.
 
-This repository contains a collection of experimental AMPL tutorial COLAB notebooks. We suggest you the following order for AMPL tutorials:
+This repository contains a collection of experimental AMPL tutorial COLAB notebooks.  
 
 * **Tutorial-00:** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
 
