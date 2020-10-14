@@ -15,8 +15,7 @@ This repository contains a collection of experimental AMPL tutorial COLAB notebo
 
 
 * **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): Simple supervised learning example.
-For background information, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
-This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
+This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL will read the data, curate, fit a RandomForest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/ 
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
 
