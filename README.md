@@ -11,7 +11,7 @@ The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an 
 
 This repository contains a collection of experimental AMPL tutorial COLAB notebooks.  
 
-* [**Tutorial-00:**]# https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
+* **Tutorial-00:** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
 
 * **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): 
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
