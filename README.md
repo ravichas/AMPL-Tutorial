@@ -14,7 +14,7 @@ This repository contains a collection of experimental AMPL tutorial COLAB notebo
 * **Tutorial-00:** https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb : Basic COLAB tutorial
 
 
-* **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): 
+* **Tutorial-01:** https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Delaney_Example.ipynb (**Time: ~ 2 minutes**): Simple supervised learning example.
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
 For background information, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
