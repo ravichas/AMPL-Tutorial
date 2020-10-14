@@ -25,8 +25,7 @@ This AMBL-COLAB notebook will take a public dataset of about 117 compounds with 
 This AMBL-COLAB notebook will take a public dataset of about 117 compounds with chemical properties and smiles strings. AMPL_GPU will read the data, curate, fit a RandomForest model to predict solubility and test the model. 
 
 * **Tutorial-03:** https://github.com/ravichas/AMPL-Tutorial/blob/master/03_CHEMBL26_SCN5A_IC50_example.ipynb (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
-![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
-
 This AMPL-COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the source of the binding affinities (pIC50)
+![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
 
