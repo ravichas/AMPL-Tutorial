@@ -1,5 +1,10 @@
-<style type="text/css">
+<style
+  type="text/css">
 h2 {color:red;}
+
+p {color:blue;}
+</style>
+okay
 
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/ATOM.PNG)
 
