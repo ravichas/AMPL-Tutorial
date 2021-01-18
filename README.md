@@ -11,7 +11,6 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 AMPL will read the public data (117 chemical compounds), curate, fit a RandomForest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/ 
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
-
 * **Tutorial-02:** https://github.com/ravichas/AMPL-Tutorial/blob/master/02_Delaney_Example_AMPL_GPU.ipynb (**Mode: AMPL_GPU; Time: ~ 2 minutes**): 
 This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_GPU)
 
@@ -23,6 +22,10 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
 * **Tutorial-05:** https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_2_curation.ipynb (**Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB Data
+This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB Data (modified from Dr. Jonathan Allen's notebook)
+
+* **Tutorial-06:** https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_2_curation.ipynb (**Time: ~ 4 minutes**)
+uploaded soon (modified from Dr. Jonathan Allen's notebook)
+
 
 
