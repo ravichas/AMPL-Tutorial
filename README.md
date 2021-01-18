@@ -21,10 +21,10 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
 * **Tutorial-05:** https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_2_curation.ipynb (**Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB Data (modified from Dr. Jonathan Allen's notebook)
+This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data (modified from Dr. Jonathan Allen's notebook)
 
-* **Tutorial-06:** https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_2_curation.ipynb (**Time: ~ 4 minutes**)
-uploaded soon (modified from Dr. Jonathan Allen's notebook)
+* **Tutorial-06:** https://github.com/ravichas/AMPL-Tutorial/blob/master/06_explore_data_excape_min_viable_one.ipyn (**Time: ~ 4 minutes**)
+This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein (modified from Dr. Jonathan Allen's notebook)
 
 
 
