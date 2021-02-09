@@ -46,6 +46,7 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 
 ## Acknowledgements: 
 * Amanda Paulson
+* Ben Madej 
 * Da Shi
 * Hiran Ranganathan
 * Jonathan Allen
