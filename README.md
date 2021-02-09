@@ -31,7 +31,7 @@ This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAP
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
 
-Acknowledgements: 
+## Acknowledgements: 
 * Amanda Paulson
 * Da Shi
 * Hiran Ranganathan
