@@ -21,14 +21,35 @@ This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
-* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/04_EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
+### Data Collection and creating Machine-Learning ready datasets:
 
-* [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_2_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+#### Data ingestion, mergin, curation and featurization
+* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/04_explore_data_excape_2_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data (modified from Dr. Jonathan Allen's notebook)
 
-* [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/06_explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+* [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/05_explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein (modified from Dr. Jonathan Allen's notebook)
 
+* [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/06_EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
+### Model training and tuning:  (coming soon)
+
+### Creatinga nd using metrics for analyzing model performance: (coming soon)
+
+### Hyper-parameter Optimization (coming soon)
+
+### Creating high-quality models (coming soon)
+
+### Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
+
+
+## Acknowledgements: 
+* Amanda Paulson
+* Ben Madej 
+* Da Shi
+* Hiran Ranganathan
+* Jonathan Allen
+* Kevin Mcloughlin
+* Ya Ju Fan
 
