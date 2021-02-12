@@ -41,7 +41,9 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 
 ### Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
 
-### Model Prediction: (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
+### Model Inference: 
+This notebook loads a model from a published work, https://arxiv.org/abs/2002.12541, and makes an inference with an example dataset, 
+https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
 
 #### Similar chemoinformatics, drug-discovery software tools:
 * DeepChem, https://deepchem.io/
