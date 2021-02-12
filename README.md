@@ -2,13 +2,10 @@
 
 The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery.
 
-Similar chemoinformatics, drug-discovery software tools:
-* DeepChem, https://deepchem.io/
-* rdkit, https://www.rdkit.org/
-
 This repository contains a collection of experimental AMPL-COLAB tutorial notebooks.  
 
-* [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial
+### Basic Google COLAB Introduction
+* [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial
 
 ### Data Collection and creating Machine-Learning ready datasets:
 
@@ -45,6 +42,10 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 ### Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
 
 ### Model Prediction: (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
+
+#### Similar chemoinformatics, drug-discovery software tools:
+* DeepChem, https://deepchem.io/
+* rdkit, https://www.rdkit.org/
 
 ## Acknowledgements: 
 * Amanda Paulson
