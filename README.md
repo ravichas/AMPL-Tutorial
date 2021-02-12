@@ -8,7 +8,7 @@ Similar chemoinformatics, drug-discovery software tools:
 
 This repository contains a collection of experimental AMPL-COLAB tutorial notebooks.  
 
-* [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial
+* [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial
 
 ### Data Collection and creating Machine-Learning ready datasets:
 
