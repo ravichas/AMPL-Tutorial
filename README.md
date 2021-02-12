@@ -43,7 +43,7 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 
 ### Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
 
-### BSEP Model Prediction: (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
+### Model Prediction: (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
 
 ## Acknowledgements: 
 * Amanda Paulson
