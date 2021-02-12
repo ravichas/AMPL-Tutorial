@@ -22,18 +22,18 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 
 ### Model training and tuning:  (coming soon)
 
-* [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
+* [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a RandomForest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/ 
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
-* [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example_AMPL_GPU.ipynb) (**Mode: AMPL_GPU; Time: ~ 2 minutes**): 
+* [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example_AMPL_GPU.ipynb) (**Mode: AMPL_GPU; Time: ~ 2 minutes**): 
 This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_GPU)
 
-* [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
+* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
-### Creatinga nd using metrics for analyzing model performance: (coming soon)
+### Creating and using metrics for analyzing model performance: (coming soon)
 
 ### Hyper-parameter Optimization (coming soon)
 
