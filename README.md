@@ -7,7 +7,7 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 ### Basic Google COLAB Introduction
 * [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial
 
-### Data Collection and creating Machine-Learning ready datasets:
+### 1. Data Collection and creating Machine-Learning ready datasets:
 
 #### Data ingestion, merging, curation and featurization
 
@@ -27,7 +27,7 @@ This COLAB notebook will use AMPL for Data curation of HTR3A protein data from D
 * [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
-### Model training and tuning:
+### 2. Model training and tuning:
 
 #### Random Forest modeling to predict solubility (CPU version)
 * [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
@@ -42,15 +42,15 @@ This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
-### Creating and using metrics for analyzing model performance: (coming soon)
+### 3. Creating and using metrics for analyzing model performance: (coming soon)
 
-### Hyper-parameter Optimization (coming soon)
+### 4. Hyper-parameter Optimization (coming soon)
 
-### Creating high-quality models (coming soon)
+### 5. Creating high-quality models (coming soon)
 
-### Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
+### 6. Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
 
-### Model Inference: 
+### 7. Model Inference: 
 This notebook loads a model from a published work, https://arxiv.org/abs/2002.12541, and makes an inference with an example dataset, 
 https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
 
