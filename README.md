@@ -9,7 +9,7 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 
 ### Data Collection and creating Machine-Learning ready datasets:
 
-#### Data ingestion, mergin, curation and featurization
+#### Data ingestion, merging, curation and featurization
 
 #### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
