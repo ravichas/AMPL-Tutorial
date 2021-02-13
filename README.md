@@ -29,11 +29,12 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 
 ### Model training and tuning:
 
+#### Random Forest modeling to predict solubility (CPU version)
 * [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
-AMPL will read the public data (117 chemical compounds), curate, fit a RandomForest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
+AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
-
+#### Random Forest modeling to predict solubility (GPU version)
 * [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example_AMPL_GPU.ipynb) (**Mode: AMPL_GPU; Time: ~ 2 minutes**): 
 This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_GPU)
 
