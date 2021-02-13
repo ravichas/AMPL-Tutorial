@@ -9,6 +9,10 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 
 ### 1. Data Collection and creating Machine-Learning ready datasets:
 
+The data that we collect for modeling is small-molecule/drug binding data. The following links will introduce some of the concepts and outcome measures related to this topic.
+* https://en.wikipedia.org/wiki/IC50
+* https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
+
 #### Data ingestion, merging, curation and featurization
 
 #### Explore HTR3A binding data from ExCAPE-DB
