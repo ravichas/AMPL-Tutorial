@@ -60,7 +60,7 @@ https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb)
 * rdkit, https://www.rdkit.org/
 
 ### Chemoinformatics databases
-* cHEMBL: https://www.ebi.ac.uk/chembl/
+* ChEMBL: https://www.ebi.ac.uk/chembl/
 * PubChem: https://pubchem.ncbi.nlm.nih.gov/
 * Drug Target Commons (DTC): https://drugtargetcommons.fimm.fi/
 * ExCAPE-DB: https://solr.ideaconsult.net/search/excape/
