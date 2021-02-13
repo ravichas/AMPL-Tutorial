@@ -29,15 +29,16 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 
 ### 2. Model training and tuning:
 
-#### Random Forest modeling to predict solubility (CPU version)
+#### Random Forest modeling to predict solubility (CPU)
 * [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
-#### Random Forest modeling to predict solubility (GPU version)
+#### Random Forest modeling to predict solubility (GPU)
 * [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example_AMPL_GPU.ipynb) (**Mode: AMPL_GPU; Time: ~ 2 minutes**): 
 This AMBL-COLAB notebook uses example Tutorial-01 except AMPL in GPU mode (AMPL_GPU)
 
+#### Graph Convolution modeling to predict SCN5A binding affinities (GPU)
 * [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
