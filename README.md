@@ -18,9 +18,12 @@ This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAP
 * [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_2_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data (modified from Dr. Jonathan Allen's notebook)
 
+#### Explore HTR3A binding data from Drug Target Commons database
+
 * [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_dtc_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from DTC (https://solr.ideaconsult.net/search/excape/) Data (modified from Dr. Jonathan Allen's notebook)
 
+#### Explore HTR3A binding data from ChEMBL database
 * [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis.  
 
