@@ -11,6 +11,7 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 
 #### Data ingestion, mergin, curation and featurization
 
+#### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein (modified from Dr. Jonathan Allen's notebook)
 
