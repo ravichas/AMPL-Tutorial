@@ -17,10 +17,10 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 
 #### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein (modified from Dr. Jonathan Allen's notebook)
+This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
 
 * [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_2_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data (modified from Dr. Jonathan Allen's notebook)
+This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data 
 
 ### Explore HTR3A binding data from Drug Target Commons database
 
@@ -74,7 +74,8 @@ https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb)
 * ExCAPE-DB: https://solr.ideaconsult.net/search/excape/
 * DrugBank: https://go.drugbank.com/
 
-## Acknowledgements: 
+## Acknowledgements
+Most of the tutorial code chunks came from multple Jupyter notebooks generously shared by the ATOM team. 
 * Amanda Paulson
 * Ben Madej 
 * Da Shi
