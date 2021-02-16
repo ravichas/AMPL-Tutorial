@@ -17,7 +17,7 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 
 #### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for data curation, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
+This COLAB notebook will use AMPL for data cleaning, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
 
 * [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_2_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data 
@@ -25,9 +25,9 @@ This COLAB notebook will use AMPL for Data curation of HTR3A protein data from E
 ### Explore HTR3A binding data from Drug Target Commons database
 
 * [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_dtc_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
-This COLAB notebook will use AMPL for Data curation, EDA and clustering of HTR3A protein data from DTC  
+This COLAB notebook will use AMPL for Data cleaning, EDA and clustering of HTR3A protein data from Drug Target Commons (DTC)  
 * [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_dtc_2_curate.ipynb) (**Mode: AMPL_GPU; Time: ~ 10 minutes**)
-This COLAB notebook will use AMPL for Data curation of HTR3A protein data from Drug Target Commons 
+This COLAB notebook will use AMPL for Data curation of HTR3A protein data from Drug Target Commons (DTC)
 
 
 
