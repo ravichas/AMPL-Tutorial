@@ -18,7 +18,7 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
       *   Visit DTC site, https://drugtargetcommons.fimm.fi/ 
       *   Download the whole dataset
       *   Extract the target of your interest using the following commands:
-            ```shell
+            ```bash
             wget https://drugtargetcommons.fimm.fi/static/Excell_files/DTC_data.csv -o DTC_data.csv 
             grep CYP3A4 DTC_data.csv > raw_data.txt 
             head -1 DTC_data.csv > header 
