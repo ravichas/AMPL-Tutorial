@@ -23,7 +23,7 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
             wget https://drugtargetcommons.fimm.fi/static/Excell_files/DTC_data.csv -o DTC_data.csv 
             grep CYP3A4 DTC_data.csv > raw_data.txt 
             head -1 DTC_data.csv > header 
-            cat header raw_data.txt > cyp3a4.csv 
+            cat header raw_data.txt > DTC_CYP3A4.csv 
             ```
 
 ### Data ingestion, merging, curation and featurization
