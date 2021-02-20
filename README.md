@@ -16,8 +16,8 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 <b> Drug Target Commons: </b>
 * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and sometimes will take a long time to export them into Excel file. The best option would be to download the whole DTC dataset (~ 2 GB) and extract the target of your interest from the master file. Here are the steps:
     *   Visit DTC site, https://drugtargetcommons.fimm.fi/ 
-    *   Download the whole dataset
-    *   Extract the target of your interest using the following commands:
+    *   Download the whole dataset (I am assuming that you are using a Linux or Mac OS for this exercise)
+    *   Extract the target of your interest (e.g., CYP3A4) using the following Linux shell commands:
 
             ```Shell
             wget https://drugtargetcommons.fimm.fi/static/Excell_files/DTC_data.csv -o DTC_data.csv 
