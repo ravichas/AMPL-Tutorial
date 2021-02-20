@@ -13,6 +13,9 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
+<b> Drug Target Commons: </b>
+* Some of the DTC target files (ex Target: CYP3A4) will be too big (~ 16 MB) and sometimes it will take a long time to download the files from the website. 
+
 ### Data ingestion, merging, curation and featurization
 
 #### Explore HTR3A binding data from ExCAPE-DB
