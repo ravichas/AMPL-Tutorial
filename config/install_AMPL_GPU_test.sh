@@ -1,4 +1,4 @@
-wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.3_Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.3-Linux-x86_64.sh
 bash Miniconda3-py37_4.8.3_Linux-x86_64.sh -b -p /content/AMPL
 
 cat << "EOF" > AMPL.txt
