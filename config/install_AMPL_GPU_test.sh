@@ -1,5 +1,5 @@
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.3-Linux-x86_64.sh
-bash Miniconda3-py37_4.8.3-Linux-x86_64.sh -b -p /content/AMPL 
+TMPDIR=/tmp bash Miniconda3-py37_4.8.3-Linux-x86_64.sh -p /content/AMPL  -b 
 
 cat << "EOF" > AMPL.txt
 # This file may be used to create an environment using:
