@@ -1,5 +1,5 @@
-wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.3-Linux-x86_64.sh
-TMPDIR=/tmp bash Miniconda3-py37_4.8.3-Linux-x86_64.sh -p /content/AMPL  -b 
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /content/AMPL
 
 cat << "EOF" > AMPL.txt
 # This file may be used to create an environment using:
@@ -225,6 +225,20 @@ cat << "EOF" > transformations_py.patch
 EOF
 
 patch -N /content/github/AMPL/atomsci/ddm/pipeline/transformations.py transformations_py.patch
+
+cat << "EOF" > __init___py.patch
+--- /content/AMPL/atomsci/ddm/__init__.py.backup    2020-09-19 18:10:05.264013977 +0000
++++ /content/AMPL/atomsci/ddm/__init__.py   2020-09-19 18:15:37.338771924 +0000
+@@ -1,6 +1,6 @@
+ import pkg_resources
+ try:
+     __version__ = pkg_resources.require("atomsci-ampl")[0].version
+-except TypeError:
++except:
+     pass
+EOF
+
+patch -N /content/github/AMPL/atomsci/ddm/__init__.py __init___py.patch
 
 PATH=/content/AMPL/bin:$PATH
 PYTHONPATH=
