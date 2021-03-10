@@ -49,7 +49,7 @@ This COLAB notebook will use AMPL for Data curation of HTR3A protein data from D
 ### Curating, merging and visualizing two datasets 
 * [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis. 
-* [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/combine_data_step_4.ipynb) (**Mode: AMPL_GPU)
+* [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/combine_data_step_4.ipynb) (**Mode: AMPL_GPU**)
 This COLAB notebook with use AMPL to merge HTR3A binding data from two different data sources, DTC and ExCAPE-DB.
 
 ## 2. Model training and tuning:
