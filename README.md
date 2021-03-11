@@ -52,15 +52,18 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 * [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/combine_data_step_4.ipynb) (**Mode: AMPL_GPU**)
 This COLAB notebook with use AMPL to merge HTR3A binding data from two different data sources, DTC and ExCAPE-DB.
 
+### Template notebook that could be used for EDA 
+* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_students.ipynb)
+
 ## 2. Model training and tuning:
 
 ### Random Forest modeling to predict solubility (GPU)
-* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
+* [Tutorial-08:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
 ### Graph Convolution modeling to predict SCN5A binding affinities (GPU)
-* [Tutorial-08:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
+* [Tutorial-09:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
