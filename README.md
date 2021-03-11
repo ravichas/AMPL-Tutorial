@@ -70,6 +70,7 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 ## 3. Creating and using metrics for analyzing model performance: (coming soon)
 
 ## 4. Hyper-parameter Optimization (coming soon)
+* [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization demo
 
 ## 5. Creating high-quality models (coming soon)
 
