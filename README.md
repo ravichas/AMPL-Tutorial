@@ -54,6 +54,8 @@ This COLAB notebook with use AMPL to merge HTR3A binding data from two different
 
 ### Template notebook that could be used for EDA 
 * [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_students.ipynb) The template notebook is set for the target HTR3A. 
+* [Tutorial-07a:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_InstructorCopy.ipynb) Instructor completed template notebook for the target HTR3A.
+* [Tutorial-07b:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Template_EDA_students.ipynb) Instructor completed template (Uses AMPL library; non Google drive dependent) notebook for the target HTR3A.
 
 ## 2. Model training and tuning:
 
