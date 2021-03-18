@@ -52,10 +52,15 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 * [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/combine_data_step_4.ipynb) (**Mode: AMPL_GPU**)
 This COLAB notebook with use AMPL to merge HTR3A binding data from two different data sources, DTC and ExCAPE-DB.
 
-### Template notebook that could be used for EDA 
-* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_students.ipynb) The template notebook is set for the target HTR3A. 
-* [Tutorial-07a:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_InstructorCopy.ipynb) Instructor completed template notebook for the target HTR3A.
-* [Tutorial-07b:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Template_EDA_students.ipynb) Instructor completed template (Uses AMPL library; non Google drive dependent) notebook for the target HTR3A.
+### EDA Notebooks
+* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_With_Harmonization.ipynb) The notebook uses HTR3A as the protein target. The notebook accomplishes the following tasks:
+   * Uses AMPL software
+   * Reads in data from three database sources: ChEMBL, Excape-DB and DTC 
+   * Cleans, standardizes and analyzes the data
+   * Merges and harmonizes to create a dataset
+* [Tutorial-07a:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_noAMPL_InstructorCopy.ipynb) Instructor completed template notebook for the target HTR3A. This notebook is different from Tutorial-07 in the following way:
+   *  Uses standalone libraries 
+   *  Repeats all the above mentioned steps of Tutorial-07
 
 ## 2. Model training and tuning:
 
