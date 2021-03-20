@@ -32,7 +32,7 @@ Here are the key steps of AMPL data curation (reading binding data (ex. DTC), ex
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/AMPL_data_curation_steps.png)
 
 
-#### Explore HTR3A binding data from ExCAPE-DB
+### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for data cleaning, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
 
