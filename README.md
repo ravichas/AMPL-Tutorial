@@ -85,7 +85,8 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 * [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
 * [Tutorial-11](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
 
-## 5. Creating high-quality models (coming soon)
+## 5. Creating high-quality models 
+* [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the resutls of HPO results and use them to identify best models. 
 
 ## 6. Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
 
