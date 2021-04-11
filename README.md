@@ -83,6 +83,7 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 
 ## 4. Hyper-parameter Optimization (HPO) and Uncertainty Quantification (UQ)
 * [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
+* [Tutorial-11](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
 
 ## 5. Creating high-quality models (coming soon)
 
