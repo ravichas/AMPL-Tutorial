@@ -87,7 +87,7 @@ This COLAB notebook will use AMPL for predicting binding affinities -pIC50 value
 * [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the resutls of HPO results and use them to identify best models. 
 
 ### 5. Model Inference: 
-* [Tutorial-xx:] This notebook loads a model from a published work, https://arxiv.org/abs/2002.12541, and makes an inference with an example dataset, 
+* [Tutorial-13:] This notebook loads a model from a published work, https://arxiv.org/abs/2002.12541, and makes an inference with an example dataset, 
 https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
 
 ## Supporting links
