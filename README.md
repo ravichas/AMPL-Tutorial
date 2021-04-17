@@ -79,7 +79,9 @@ AMPL will read the public data (117 chemical compounds), curate, fit a Random Fo
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
-## 3. Hyper-parameter Optimization (HPO), Uncertainty Quantification (UQ), and using metrics for analyzing model performance. Also explores AMPL functions for saving and loading prebuild AMPL models for analysis. 
+## 3. Hyper-parameter Optimization (HPO), Uncertainty Quantification (UQ), and using metrics for analyzing model performance. 
+
+This notebook also explores AMPL functions for saving and loading prebuild AMPL models for analysis. 
 * [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
 * [Tutorial-11](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
 
