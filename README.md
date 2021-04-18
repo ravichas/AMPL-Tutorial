@@ -1,6 +1,6 @@
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/ATOM.PNG)
 
-The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery.
+The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery. To see the list of AMPL parameters, please check this link,  https://github.com/ATOMconsortium/AMPL/blob/master/atomsci/ddm/docs/PARAMETERS.md
 
 This repository contains a collection of experimental AMPL-COLAB tutorial notebooks.  
 
@@ -13,7 +13,12 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
-<b> Drug Target Commons: </b>
+For the tutorials, we will use the small-molecule data obtained from ChEMBL, Drug Target Commons (DTC) and Excape-DB. Look at the end of this document for the database links. 
+
+* ChEMBL & Escape-DB: For a single target data, it is easy to download from the DB websites
+* Drug Target Commons (DTC): Please see below
+
+<b> DTC: </b>
 * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and sometimes will take a long time to export them into Excel file. The best option would be to download the whole DTC dataset (~ 2 GB) and extract the target of your interest from the master file. Here are the steps:
     *   Visit DTC site, https://drugtargetcommons.fimm.fi/ 
     *   Download the whole dataset (I am assuming that you are using a Linux or Mac OS for this exercise)
@@ -32,7 +37,7 @@ Here are the key steps of AMPL data curation (reading binding data (ex. DTC), ex
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/AMPL_data_curation_steps.png)
 
 
-#### Explore HTR3A binding data from ExCAPE-DB
+### Explore HTR3A binding data from ExCAPE-DB
 * [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_excape_min_viable_one.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for data cleaning, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
 
@@ -74,18 +79,18 @@ AMPL will read the public data (117 chemical compounds), curate, fit a Random Fo
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
-## 3. Creating and using metrics for analyzing model performance: (coming soon)
+## 3. Hyper-parameter Optimization (HPO), Uncertainty Quantification (UQ), and using metrics for analyzing model performance. 
 
-## 4. Hyper-parameter Optimization (coming soon)
-* [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization demo
+This notebook also explores AMPL functions for saving and loading prebuild AMPL models for analysis. 
+* [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
+* [Tutorial-11](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
 
-## 5. Creating high-quality models (coming soon)
+## 4. Creating high-quality models 
+* [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the resutls of HPO results and use them to identify best models. 
 
-## 6. Exploring AMPL functions for saving models and loading prebuild models for prediction (coming soon)
-
-### Model Inference: 
-* [Tutorial-xx:] This notebook loads a model from a published work, https://arxiv.org/abs/2002.12541, and makes an inference with an example dataset, 
-https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) 
+### 5. Model Inference: 
+* [Tutorial-13:] (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://arxiv.org/abs/2002.12541), and makes predictions (inference) on an external sample test dataset.   
+ 
 
 ## Supporting links
 
