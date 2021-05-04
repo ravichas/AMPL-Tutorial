@@ -30,7 +30,6 @@ For the tutorials, we will use the small-molecule data obtained from ChEMBL (htt
             grep CYP3A4 DTC_data.csv > raw_data.txt 
             head -1 DTC_data.csv > header 
             cat header raw_data.txt > DTC_CYP3A4.csv 
-
             ```
             
 Once you have downloaded the datasets from multiple database sources, you need to ingest, merge and featurize the dataset. If your data came from one dataset or you have a custom data, then you can skip the merging step. Here are the steps for the data-cleaning and featurization steps:             
