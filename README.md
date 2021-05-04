@@ -20,6 +20,7 @@ For the tutorials, we will use the small-molecule data obtained from ChEMBL (htt
 * Drug Target Commons (DTC): Please see below <br>
    * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and sometimes in DTC downloading this data will take a long time.
      If that happens, the best option would be to download the whole DTC dataset (~ 2 GB) and extract the target of your interest from the master file. Here are the steps:
+
          * Visit DTC site, https://drugtargetcommons.fimm.fi/ 
          * Download the whole dataset (I am assuming that you are using a Linux or Mac OS for this exercise)
          * Extract the target of your interest (e.g., CYP3A4) using the following Linux shell commands:
