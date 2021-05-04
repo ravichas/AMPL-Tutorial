@@ -13,7 +13,7 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
-For the tutorials, we will use the small-molecule data obtained from ChEMBL, Drug Target Commons (DTC) and Excape-DB. Look at the end of this document for the database links. 
+For the tutorials, we will use the small-molecule data obtained from ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/).  
 
 * ChEMBL & Escape-DB: For a single target data, it is easy to download from the DB websites
 * Drug Target Commons (DTC): Please see below
