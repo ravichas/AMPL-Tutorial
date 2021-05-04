@@ -15,9 +15,9 @@ The data that we collect for modeling is small-molecule/drug binding data. The f
 
 For the tutorials, we will use the small-molecule data obtained from ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/).  
 
-* ChEMBL & Escape-DB: For a single target data, it is easy to download from the DB websites
+### Single target focussed data
+* ChEMBL & Escape-DB: It is easy to download from the DB websites
 * Drug Target Commons (DTC): Please see below
-
 <b> DTC: </b>
 * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and sometimes will take a long time to export them into Excel file. The best option would be to download the whole DTC dataset (~ 2 GB) and extract the target of your interest from the master file. Here are the steps:
     *   Visit DTC site, https://drugtargetcommons.fimm.fi/ 
