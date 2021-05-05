@@ -117,4 +117,8 @@ Most of the tutorial code chunks came from multple Jupyter notebooks generously 
 * Jonathan Allen
 * Kevin Mcloughlin
 * Ya Ju Fan
+* Contributions from the following student programs: 
+    * Purdue Datamine 
+    * Butler University
+    * Columbia University 
 
