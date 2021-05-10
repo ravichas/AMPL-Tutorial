@@ -9,16 +9,16 @@ This repository contains a collection of experimental AMPL-COLAB tutorial notebo
 
 ## 1. Data Collection and creating Machine-Learning ready datasets:
 
-The data that we collect for modeling is small-molecule/drug binding data. The following links will introduce some of the concepts and outcome measures related to this topic:
+The data that we gather for modeling is small-molecule/drug binding data. The following links will introduce some of the concepts and outcome measures related to this topic:
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
-For the tutorials, we will use the small-molecule data obtained from ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/).  
+For the tutorials, we will use the small-molecule binding data obtained from either one of the following resources, ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/).  
 
 ### Single target focussed data
 * ChEMBL & Escape-DB: It is easy to download from the DB websites
 * Drug Target Commons (DTC): Please see below <br>
-   * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and sometimes in DTC downloading this data will take a long time.
+   * Some of the DTC target related information (ex Target: CYP3A4) will be big (> 46K compounds and ~ 16 MB) and downloading large datasets will take a long time.
      If that happens, the best option would be to download the whole DTC dataset (~ 2 GB) and extract the target of your interest from the master file. Here are the steps:
 
          * Visit DTC site, https://drugtargetcommons.fimm.fi/ 
@@ -32,7 +32,7 @@ For the tutorials, we will use the small-molecule data obtained from ChEMBL (htt
             cat header raw_data.txt > DTC_CYP3A4.csv 
             ```
             
-Once you have downloaded the datasets from multiple database sources, you need to ingest, merge and featurize the dataset. If your data came from one dataset or you have a custom data, then you can skip the merging step. Here are the steps for the data-cleaning and featurization steps:             
+If your data came from one datasource or you have a custom data, then you can skip the merging step. In other cases, you might want to download data from multiple sources and merge them to create a combined dataset. The procedure can be described as follows: After you download the datasets from multiple database sources, you need to ingest, merge and featurize the dataset. The following section, `Data ingestion, merging, curation and featurization`, will provide sample Jupyter notebooks that will address these steps.         
 
 ### Data ingestion, merging, curation and featurization
 
