@@ -69,6 +69,8 @@ This COLAB notebook with use AMPL to merge HTR3A binding data from two different
 * [Tutorial-07a:](https://github.com/ravichas/AMPL-Tutorial/blob/master/07a_EDA_noAMPL_InstructorCopy.ipynb) Instructor completed template notebook for the target HTR3A. This notebook is different from Tutorial-07 in the following way:
    *  Uses standalone libraries 
    *  Repeats all the above mentioned steps of Tutorial-07
+* [Tutorial-08:] Exploratory Data Analysis-Regression (https://github.com/ravichas/AMPL-Tutorial/blob/master/08_AMPL_EDA_Part2.ipynb)
+* [Tutorial-09:] Exploratory Data Analysis-Regression (https://github.com/ravichas/AMPL-Tutorial/blob/master/09_AMPL_EDA_Part2_Classification.ipynb)
 
 ## 2. Model training and tuning:
 
