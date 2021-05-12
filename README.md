@@ -73,7 +73,7 @@ This COLAB notebook with use AMPL to merge HTR3A binding data from two different
 ## 2. Model training and tuning:
 
 ### Random Forest modeling to predict solubility (GPU)
-* [Tutorial-08:](https://github.com/ravichas/AMPL-Tutorial/blob/master/Delaney_Example.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
+* [Tutorial-08:](https://github.com/ravichas/AMPL-Tutorial/blob/master/08_Delaney_Solubility_Prediction.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
