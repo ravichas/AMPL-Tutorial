@@ -51,7 +51,7 @@ This COLAB notebook will use AMPL for data curation of HTR3A protein data from E
 
 * [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/03_Explore_Data_DTC.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data cleaning, EDA and clustering of HTR3A protein data from Drug Target Commons (DTC)  
-* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/explore_data_dtc_2_curate.ipynb) (**Mode: AMPL_GPU; Time: ~ 10 minutes**)
+* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/04_Explore_Data_DTC_Curate.ipynb) (**Mode: AMPL_GPU; Time: ~ 10 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from Drug Target Commons (DTC)
 
 ### Curating, merging and visualizing two datasets 
