@@ -91,10 +91,10 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
 * [Tutorial-13](https://github.com/ravichas/AMPL-Tutorial/blob/master/13_AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
 
 ## 4. Creating high-quality models 
-* [Tutorial-12] (https://github.com/ravichas/AMPL-Tutorial/blob/master/08_AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the results of HPO results and use them to identify best models. 
+* [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/08_AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the results of HPO results and use them to identify best models. 
 
 ### 5. Model Inference: 
-* [Tutorial-13:] (https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://pubmed.ncbi.nlm.nih.gov/33502191/), and makes predictions (inference) on an external sample test dataset.   
+* [Tutorial-13:](https://github.com/ravichas/AMPL-Tutorial/blob/master/BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://pubmed.ncbi.nlm.nih.gov/33502191/), and makes predictions (inference) on an external sample test dataset.   
  
 
 ## Supporting links
