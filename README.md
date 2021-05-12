@@ -61,7 +61,7 @@ This COLAB notebook will use AMPL to upload datasets (small-molecule activity da
 This COLAB notebook with use AMPL to merge HTR3A binding data from two different data sources, DTC and ExCAPE-DB.
 
 ### EDA Notebooks
-* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/EDA_With_Harmonization.ipynb) The notebook uses HTR3A as the protein target. The notebook accomplishes the following tasks:
+* [Tutorial-07:](https://github.com/ravichas/AMPL-Tutorial/blob/master/07_EDA_With_Harmonization.ipynb) The notebook uses HTR3A as the protein target. The notebook accomplishes the following tasks:
    * Uses AMPL software
    * Reads in data from three database sources: ChEMBL, Excape-DB and DTC 
    * Cleans, standardizes and analyzes the data
