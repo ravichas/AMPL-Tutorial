@@ -75,20 +75,20 @@ This COLAB notebook with use AMPL to merge HTR3A binding data from two different
 ## 2. Model training and tuning:
 
 ### Random Forest modeling to predict solubility (GPU)
-* [Tutorial-08:](https://github.com/ravichas/AMPL-Tutorial/blob/master/10_Delaney_Solubility_Prediction.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
+* [Tutorial-10:](https://github.com/ravichas/AMPL-Tutorial/blob/master/10_Delaney_Solubility_Prediction.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
 ### Graph Convolution modeling to predict SCN5A binding affinities (GPU)
-* [Tutorial-09:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
+* [Tutorial-11:](https://github.com/ravichas/AMPL-Tutorial/blob/master/CHEMBL26_SCN5A_IC50_example.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
 
 ## 3. Hyper-parameter Optimization (HPO), Uncertainty Quantification (UQ), and using metrics for analyzing model performance. 
 
 This notebook also explores AMPL functions for saving and loading prebuild AMPL models for analysis. 
-* [Tutorial-10](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
-* [Tutorial-11](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
+* [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_demo.ipynb) Hyper-parameter Optimization [(HPO)](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and Uncertainty Quantification [(UQ)](https://en.wikipedia.org/wiki/Uncertainty_quantification).
+* [Tutorial-13](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_HPO_Part2.ipynb) Notebook includes HPO Grid Search on three different modeling methods (Random Forest, NN and XGBoost).
 
 ## 4. Creating high-quality models 
 * [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the results of HPO results and use them to identify best models. 
