@@ -1,6 +1,9 @@
 mkdir github
 cd github
 git clone https://github.com/ATOMconsortium/AMPL.git
+cd AMPL
+git checkout pkg_upgrade
+cd ..
 
 cat << "EOF" > transformations_py.patch
 --- transformations.py  2020-09-14 17:08:22.225747322 -0700
