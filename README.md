@@ -13,7 +13,9 @@ The data that we gather for modeling is small-molecule/drug binding data. The fo
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
-For the tutorials, we will use the small-molecule binding data obtained from either one of the following resources, ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/). Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/supp_md/README.md) to learn about single-target focussed data. 
+For the tutorials, we will use the small-molecule binding data obtained from either one of the following resources, ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/). 
+
+Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/supp_md/README.md) to learn about single-target focussed data.
 
 
 ### Explore HTR3A binding data from ExCAPE-DB
