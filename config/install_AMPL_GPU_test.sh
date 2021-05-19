@@ -1,6 +1,6 @@
 mkdir github
 cd github
-git clone https://github.com/stewarthe6/AMPL-1/tree/version_colab_bug
+git clone https://github.com/stewarthe6/AMPL-1.git
 
 cat << "EOF" > transformations_py.patch
 --- transformations.py  2020-09-14 17:08:22.225747322 -0700
