@@ -2,6 +2,7 @@ mkdir github
 cd github
 git clone https://github.com/stewarthe6/AMPL-1.git
 
+
 cat << "EOF" > transformations_py.patch
 --- transformations.py  2020-09-14 17:08:22.225747322 -0700
 +++ transformations_patched.py  2020-09-14 17:08:07.869651225 -0700
@@ -36,5 +37,6 @@ PATH=/content/AMPL-1/bin:$PATH
 PYTHONPATH=
 
 cd /content/github/AMPL-1
+git checkout version_colab_bug
 ./build.sh
 ./install.sh system
