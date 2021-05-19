@@ -116,12 +116,12 @@ Most of the tutorial code chunks came from multple Jupyter notebooks generously 
 * Ben Madej 
 * Da Shi
 * Hiran Ranganathan
+* Jessica Mauvais
 * Jonathan Allen
 * Kevin Mcloughlin
-* Ya Ju Fan
-* Jessica Mauvais
-* Stewart He
 * Sarangan Ravichandran
+* Stewart He
+* Ya Ju Fan
 * Contributions from the following student programs: 
     * The Purdue Data Mine; https://datamine.purdue.edu/  
     * Butler University
