@@ -2,7 +2,7 @@
 
 The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery. To see the list of AMPL parameters, please check this link,  https://github.com/ATOMconsortium/AMPL/blob/master/atomsci/ddm/docs/PARAMETERS.md
 
-This repository contains a collection of experimental AMPL-COLAB tutorial notebooks.  
+This page contains a collection of AMPL-COLAB tutorial notebooks.  
 
 ## 0. Basic Google COLAB Introduction (Works best with Google Chrome)
 * [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial. For all the COLAB tutorials, click on the tutorial link, and then click on "Open in Colab" baner. You can open and run the notebook from the browser. If you want to save your edits to the notebook, you need to save a copy in your Google Drive. Usually, Google COLAB saves the notebook files under the "My Drive > Colab Notebooks" folder
@@ -13,7 +13,7 @@ The data that we gather for modeling is small-molecule/drug binding data. The fo
 * https://en.wikipedia.org/wiki/IC50
 * https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1476-5381.2009.00604.x
 
-For the tutorials, we will use the small-molecule binding data obtained from either one of the following resources, ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/). Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/supp_md) to learn about single-target focussed data. 
+For the tutorials, we will use the small-molecule binding data obtained from either one of the following resources, ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and Excape-DB (https://solr.ideaconsult.net/search/excape/). Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/supp_md/README.md) to learn about single-target focussed data. 
 
 
 ### Explore HTR3A binding data from ExCAPE-DB
