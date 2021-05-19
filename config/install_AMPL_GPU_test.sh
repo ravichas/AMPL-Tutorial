@@ -35,6 +35,6 @@ patch -N /content/github/AMPL/atomsci/ddm/__init__.py __init___py.patch
 PATH=/content/AMPL/bin:$PATH
 PYTHONPATH=
 
-cd /content/github/AMPL
+cd /content/github/AMPL-1
 ./build.sh
 ./install.sh system
