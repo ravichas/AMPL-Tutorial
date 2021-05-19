@@ -41,21 +41,21 @@ Here are the key steps of AMPL data curation (reading binding data (ex. DTC), ex
 
 
 ### Explore HTR3A binding data from ExCAPE-DB
-* [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Exploring_Target_Activity_ExcapeDB.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+* [Tutorial-01:](https://github.com/ravichas/AMPL-Tutorial/blob/master/01_Exploring_Target_Activity_ExcapeDB.ipynb) (**Time: ~ 3 minutes**)
 This COLAB notebook will use AMPL for data cleaning, EDA and clustering on ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) data for HTR3A protein 
 
-* [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/02_Explore_Data_ExcapeDB_curation.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+* [Tutorial-02:](https://github.com/ravichas/AMPL-Tutorial/blob/master/02_Explore_Data_ExcapeDB_curation.ipynb) (**Time: ~ 6 minutes**)
 This COLAB notebook will use AMPL for data curation of HTR3A protein data from ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) Data 
 
 ### Explore HTR3A binding data from Drug Target Commons database
 
-* [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/03_Explore_Data_DTC.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+* [Tutorial-03:](https://github.com/ravichas/AMPL-Tutorial/blob/master/03_Explore_Data_DTC.ipynb) (**Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL for Data cleaning, EDA and clustering of HTR3A protein data from Drug Target Commons (DTC)  
-* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/04_Explore_Data_DTC_Curate.ipynb) (**Mode: AMPL_GPU; Time: ~ 10 minutes**)
+* [Tutorial-04:](https://github.com/ravichas/AMPL-Tutorial/blob/master/04_Explore_Data_DTC_Curate.ipynb) (**Time: ~ 10 minutes**)
 This COLAB notebook will use AMPL for Data curation of HTR3A protein data from Drug Target Commons (DTC)
 
 ### Curating, merging and visualizing two datasets 
-* [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/05_EDA_Curate_Merge_Visualize.ipynb) (**Mode: AMPL_GPU; Time: ~ 4 minutes**)
+* [Tutorial-05:](https://github.com/ravichas/AMPL-Tutorial/blob/master/05_EDA_Curate_Merge_Visualize.ipynb) (**Time: ~ 4 minutes**)
 This COLAB notebook will use AMPL to upload datasets (small-molecule activity data from ChEMBL), clean, merge and do some basic Exploratory Data Analysis. 
 * [Tutorial-06:](https://github.com/ravichas/AMPL-Tutorial/blob/master/06_Combine_Datasets.ipynb) (**Mode: AMPL_GPU**)
 This COLAB notebook with use AMPL to merge HTR3A binding data from two different data sources, DTC and ExCAPE-DB.
@@ -74,12 +74,12 @@ This COLAB notebook with use AMPL to merge HTR3A binding data from two different
 
 ## 2. Model training and tuning:
 
-### Random Forest modeling to predict solubility (GPU)
+### Random Forest modeling to predict solubility
 * [Tutorial-10:](https://github.com/ravichas/AMPL-Tutorial/blob/master/10_Delaney_Solubility_Prediction.ipynb) (**Time: ~ 2 minutes**): Simple supervised learning example.
 AMPL will read the public data (117 chemical compounds), curate, fit a Random Forest model to predict solubility and test the model. For additional information on the dataset, please check this publication,https://pubmed.ncbi.nlm.nih.gov/15154768/
 ![Delaney](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/Delaney.PNG)
 
-### Graph Convolution modeling to predict SCN5A binding affinities (GPU)
+### Graph Convolution modeling to predict SCN5A binding affinities 
 * [Tutorial-11:](https://github.com/ravichas/AMPL-Tutorial/blob/master/11_CHEMBL26_SCN5A_IC50_prediction.ipynb) (**Mode: AMPL_GPU; Time: ~ 18 minutes**): 
 This COLAB notebook will use AMPL for predicting binding affinities -pIC50 values- of ligands that could bind to human **Sodium channel protein type 5 subunit alpha** protein (Gene: SCN5A) using Graph Convolutional Network Model. ChEMBL database is the data source of binding affinities (pIC50)
 ![Test Image 1](https://github.com/ravichas/AMPL-Tutorial/blob/master/Img/SCN5A.PNG)
