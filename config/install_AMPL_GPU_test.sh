@@ -33,6 +33,23 @@ EOF
 
 patch -N /content/github/AMPL-1/atomsci/ddm/__init__.py __init___py.patch
 
+cat << "EOF" > featurization_py.patch
+--- a/atomsci/ddm/pipeline/featurization.py
++++ b/atomsci/ddm/pipeline/featurization.py
+@@ -732,7 +732,7 @@ class DynamicFeaturization(Featurization):
+             ##JEA: will set weights to 0 for missing values
+             ##JEA: Featurize task results iff they exist.
+             dset_df=dset_df.replace(np.nan, "", regex=True)
+-            vals, w = dl.convert_df_to_numpy(dset_df, params.response_cols) #, self.id_field)
++            vals, w = dl._convert_df_to_numpy(dset_df, params.response_cols) #, self.id_field)
+             # Filter out examples where featurization failed.
+             vals, w = (vals[is_valid], w[is_valid])
+         else:
+EOF
+
+patch -N /content/github/AMPL-1/atomsci/ddm/pipeline/featurization.py featurization_py.patch
+
+
 PATH=/content/AMPL-1/bin:$PATH
 PYTHONPATH=
 
