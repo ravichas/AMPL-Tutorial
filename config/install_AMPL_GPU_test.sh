@@ -37,6 +37,6 @@ PATH=/content/AMPL-1/bin:$PATH
 PYTHONPATH=
 
 cd /content/github/AMPL-1
-git checkout version_colab_bug
+git checkout DC2.5
 ./build.sh
 ./install.sh system
