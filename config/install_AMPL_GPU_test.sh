@@ -17,7 +17,7 @@ cat << "EOF" > transformations_py.patch
  from deepchem.trans.transformers import Transformer, NormalizationTransformer
 EOF
 
-patch -N /content/github/AMPL/atomsci/ddm/pipeline/transformations.py transformations_py.patch
+patch -N /content/github/AMPL-1/atomsci/ddm/pipeline/transformations.py transformations_py.patch
 
 cat << "EOF" > __init___py.patch
 --- /content/AMPL-1/atomsci/ddm/__init__.py.backup    2020-09-19 18:10:05.264013977 +0000
