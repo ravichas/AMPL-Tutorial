@@ -74,7 +74,7 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
 ## AMPL Workshops
 **Workshop date, June 05, 2021**: Protein Target-focussed Binding Data Curation, Exploratory Data Analysis and Featurization using AMPL. 
 * Click [here](https://drive.google.com/file/d/1ScmouWOLOmzjw_NhNryyjHBqNXlVEw43/view?usp=sharing) to access the presentation slides.
-* Click [hrere](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to open the tutorial Jupyter COLAB notebook.
+* Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to open the tutorial Jupyter COLAB notebook.
 
 ## Supporting links
 
