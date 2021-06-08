@@ -72,7 +72,7 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
 * [Tutorial-14:](https://github.com/ravichas/AMPL-Tutorial/blob/master/14_BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://pubmed.ncbi.nlm.nih.gov/33502191/), and makes predictions (inference) on an external sample test dataset. 
  
 ## AMPL Workshops
-* [June 05, 2021](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) Protein Target-focussed Binding Data Curation, Exploratory Data Analysis and Featurization using AMPL. 
+* Protein Target-focussed Binding Data Curation, Exploratory Data Analysis and Featurization using AMPL. Workshop date: June 05, 2021. Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to go to the tutorial COLAB (jupyter) notebook.
 * Presentation slides link: https://drive.google.com/file/d/1ScmouWOLOmzjw_NhNryyjHBqNXlVEw43/view?usp=sharing 
 
 ## Supporting links
