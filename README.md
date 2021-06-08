@@ -3,6 +3,9 @@
 The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery. To see the list of AMPL parameters, please check this link,  https://github.com/ATOMconsortium/AMPL/blob/master/atomsci/ddm/docs/PARAMETERS.md
 
 This page contains a collection of AMPL-COLAB tutorial notebooks.  
+```diff
++ Please note that if you have trouble opening up any of the following notebooks, please go to, https://nbviewer.jupyter.org/, and paste the notebook link to view the contents.
+```
 
 ## 0. Basic Google COLAB Introduction (Works best with Google Chrome)
 * [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial. For all the COLAB tutorials, click on the tutorial link, and then click on "Open in Colab" baner. You can open and run the notebook from the browser. If you want to save your edits to the notebook, you need to save a copy in your Google Drive. Usually, Google COLAB saves the notebook files under the "My Drive > Colab Notebooks" folder
@@ -73,7 +76,7 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
  
 ## AMPL Workshops
 **Workshop date, June 05, 2021**: Protein Target-focussed Binding Data Curation, Exploratory Data Analysis and Featurization using AMPL. 
-**Please note that Google Chrome works best with workshop related Jupyter notebook.** 
+**Please note that Google Chrome browser works best with the COLAB Jupyter notebooks** 
 * Click [here](https://drive.google.com/file/d/1ScmouWOLOmzjw_NhNryyjHBqNXlVEw43/view?usp=sharing) to access the presentation slides.
 * Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to open the tutorial Jupyter COLAB notebook.
 
