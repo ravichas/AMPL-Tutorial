@@ -3,6 +3,9 @@
 The ATOM Modeling PipeLine (AMPL; https://github.com/ATOMconsortium/AMPL) is an open-source, modular, extensible software pipeline for building and sharing models to advance in silico drug discovery. To see the list of AMPL parameters, please check this link,  https://github.com/ATOMconsortium/AMPL/blob/master/atomsci/ddm/docs/PARAMETERS.md
 
 This page contains a collection of AMPL-COLAB tutorial notebooks.  
+```diff
++ Please note that if you have trouble opening up any of the following notebooks, please go to, https://nbviewer.jupyter.org/, and paste the notebook link to view the contents.
+```
 
 ## 0. Basic Google COLAB Introduction (Works best with Google Chrome)
 * [Tutorial-00:](https://github.com/ravichas/AMPL-Tutorial/blob/master/00_BasicCOLAB_Tutorial.ipynb) Basic COLAB tutorial. For all the COLAB tutorials, click on the tutorial link, and then click on "Open in Colab" baner. You can open and run the notebook from the browser. If you want to save your edits to the notebook, you need to save a copy in your Google Drive. Usually, Google COLAB saves the notebook files under the "My Drive > Colab Notebooks" folder
@@ -69,8 +72,13 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
 * [Tutorial-12](https://github.com/ravichas/AMPL-Tutorial/blob/master/08_AMPL_EDA_Part2.ipynb) Notebook provides the framework for visualizing the results of HPO results and use them to identify best models. 
 
 ## 5. Model Inference: 
-* [Tutorial-14:](https://github.com/ravichas/AMPL-Tutorial/blob/master/14_BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://pubmed.ncbi.nlm.nih.gov/33502191/), and makes predictions (inference) on an external sample test dataset.   
+* [Tutorial-14:](https://github.com/ravichas/AMPL-Tutorial/blob/master/14_BSEP_modeling.ipynb) This notebook creates an AMPL (RF) model using BSEP dataset (reference: https://pubmed.ncbi.nlm.nih.gov/33502191/), and makes predictions (inference) on an external sample test dataset. 
  
+## AMPL Workshops
+**Workshop date, June 05, 2021**: Protein Target-focussed Binding Data Curation, Exploratory Data Analysis and Featurization using AMPL. 
+**Please note that Google Chrome browser works best with the COLAB Jupyter notebooks** 
+* Click [here](https://drive.google.com/file/d/1ScmouWOLOmzjw_NhNryyjHBqNXlVEw43/view?usp=sharing) to access the presentation slides.
+* Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to open the tutorial Jupyter COLAB notebook. If for some reason, the notebook link doesnt work for you, please use this one, https://nbviewer.jupyter.org/github/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb
 
 ## Supporting links
 
