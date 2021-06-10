@@ -79,7 +79,7 @@ This notebook also explores AMPL functions for saving and loading prebuild AMPL 
 **Please note that Google Chrome browser works best with the COLAB Jupyter notebooks** 
 * Click [here](https://drive.google.com/file/d/1ScmouWOLOmzjw_NhNryyjHBqNXlVEw43/view?usp=sharing) to access the presentation slides.
 * Click [here](https://github.com/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb) to open the tutorial Jupyter COLAB notebook. If for some reason, the notebook link doesnt work for you, please use this one, https://nbviewer.jupyter.org/github/ravichas/AMPL-Tutorial/blob/master/AMPL_FNL_Workshop_06052021.ipynb
-* For use with GCP or other pre-installed AMPL environments: https://github.com/ravichas/AMPL-Tutorial/raw/master/GCP_AMPL_FNL_Workshop_06052021.ipynb  
+* For use with GCP or other pre-installed AMPL environments: https://github.com/ravichas/AMPL-Tutorial/blob/master/GCP_AMPL_FNL_Workshop_06052021.ipynb  
 
 ## Supporting links
 
