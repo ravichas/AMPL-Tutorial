@@ -34,7 +34,7 @@ Data input: tar_gene_chembl.txt, tar_gene.txt, gene_lst_v1.txt
 Output folders: tempDataKi, tempPlotKi 
 
 Here is a tree structure of the tar file:
-
+```
 sourceCuration
 ├── custom_config.py
 ├── custom_data_curation.py
@@ -49,7 +49,7 @@ sourceCuration
 │   └── This-is-a-Folder-for-output-data
 └── tempPlotKi
     └── This-is-a-Folder-for-output-plots-in-pdf
-
+```
 
 output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
 output_img_dir (str) : location to put diagnostic data , currently just distribution of activity values for final set"
