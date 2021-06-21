@@ -86,13 +86,14 @@ xz -d pubchem.chembl.dataset4publication_inchi_smiles_v2.tsv.xz
 
 Warning: the file could take upto ~20 GB. 
 # here is how you can extract a single target (ex. HTR3A) related data.
+```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
-
+```
 ## DTC
 
 Visit http://drgutargetcommons.fimm.fi/ 
 
-
+```
 DB
 ├── [4.0K]  ChEMBL
 │   └── [4.0K]  raw
@@ -105,6 +106,6 @@ DB
 │           └── [ 95M]  inchikey_smiles.csv
 └── [4.0K]  excapedb
     └── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
-
+```
 
 
