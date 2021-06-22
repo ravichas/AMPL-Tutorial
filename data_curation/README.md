@@ -4,15 +4,21 @@
 
 ## Scope and details of the script
 
-The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and create 
-machine-learning ready datasets (combined and individuval) along with some simple Exploratory Data Analysis plots. Users with some effort can add -need Python programming- other input databas sources by extending the code.   
+The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and creates 
+machine-learning ready datasets (combined and individuval) along with some basic Exploratory Data Analysis plots. Users with some effort can add -need Python programming- other input databas sources by extending the code.   
 
-### Requirements: 
+### Software requirements: 
 
 AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
 
 ### Instructions to run the script:
-*  
+* Download the tar file, `MultipleSourceCurn.tar.gz`
+* Unar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
+* It will create MultipleSourceCurn folder with two sub-folders, DB and sourceCuration 
+* DB folder files, due to large size, will not be included in the tarball 
+* Users have to download it from the respecite sources (ex. DTC, ExCAPE-DB). Downloading the whole DTC and ExCAPE-DB is easy. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
+    * https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-download-questions
+    * https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
 
 ## File structure details of the sourceCuration tar file
 
