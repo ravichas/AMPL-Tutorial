@@ -43,6 +43,7 @@ After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.ta
 file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
 DB folder. Make sure the filenames match the filenames listed in the `priority_panel_ki.ini` file
 
+```
 MultipleSourceCurn
 ├── [4.0K]  DB
     ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
@@ -50,7 +51,7 @@ MultipleSourceCurn
     ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
     ├── [2.1G]  uid2cact.json         # ChEMBL DB 
     └── [557K]  uid2gn_human.json     # ChEMBL DB
-
+```
 
 ### Instructions for running the script:
 * Install AMPL 
