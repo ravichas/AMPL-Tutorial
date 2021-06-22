@@ -75,11 +75,9 @@ MultipleSourceCurn
 
 ## DB directory details: 
 
-output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
-output_img_dir (str) : location to put diagnostic data , currently just distribution of activity values for final set"
-comb (dictionary) : dictionary with key as gene target and value as CustomActivityDump class
-comb_type (str): pre_curated (default) combines the datasets from different sources that were individually curated. 
-Not yet implemented is a raw option to re-combine all data
+* output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
+* output_img_dir (str) : location to put diagnostic data 
+    * currently will contain just distribution of activity values for final set
 
 ## Test run: 
 Python code was tested for single and multiple protein targets along with different choices 
