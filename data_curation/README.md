@@ -1,6 +1,10 @@
-# Details and scope of the ATOM Modeling Pipeline (AMPL) bulk database(s) download script
+# ATOM Modeling Pipeline (AMPL) target-specific bulk database(s) download script
 
-To automate the data download from public target binding data from chemoinformatics databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and create 
+![](Img/BuldDownload.png) 
+
+## Scope and details of the script
+
+The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and create 
 machine-learning ready datasets (combined and individuval) along with some simple Exploratory Data Analysis plots. Users with some effort can add -need Python programming- other input databas sources by extending the code.   
 
 ### Requirements: 
