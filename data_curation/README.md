@@ -75,7 +75,7 @@ MultipleSourceCurn
 
 ## DB directory details: 
 
-* output_data_dir : directory location to put combined model ready dataset and rejected compounds.
+* **output_data_dir** : directory location to put combined model ready dataset and rejected compounds.
 * **output_img_dir**  : location to put diagnostic data 
     * currently will contain just distribution of activity values for final set
 
