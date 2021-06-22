@@ -4,7 +4,7 @@
 
 ## Scope and details of the script
 
-The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/) and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and creates 
+The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc. The script also creates 
 machine-learning ready datasets (combined and individuval) along with some basic Exploratory Data Analysis plots. Users with some effort can add -need Python programming- other input databas sources by extending the code.   
 
 ### Software requirements: 
@@ -70,7 +70,7 @@ MultipleSourceCurn
     * ChEMBL gene list should follow the naming convention as shown in `tar_gene_chembl.txt`
     * DTC gene list should follow the naming convention as shown in `tar_gene.txt` 
     * ExCAPE-DB gene list should follow the naming convention as shown `gene_lst_v1.txt`
-* Now, run the following script
+* After completing the above mentioned steps, run the following script
   - `./example.sh >& example.out` 
   
 
@@ -82,7 +82,7 @@ comb (dictionary) : dictionary with key as gene target and value as CustomActivi
 comb_type (str): pre_curated (default) combines the datasets from different sources that were individually curated. 
 Not yet implemented is a raw option to re-combine all data
 
-Test run: 
+## Test run: 
 Python code was tested for single and multiple protein targets along with different choices 
 for the accumulation assay data type (ki, IC50 etc.)  
 
@@ -96,9 +96,6 @@ real    51m49.211s
 user    50m9.502s
 sys     0m59.148s
 
-## Data files 
-
-Please note that the data files 
 
 # Details on how to extract data from the databases
 
@@ -118,8 +115,19 @@ awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv 
 ```
 ## DTC
 
-Visit http://drgutargetcommons.fimm.fi/ 
+Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here is a first few lines of the dataset
 
+```
+(atomsci) jupyter@ampl-ravi:~/MultipleSourceCurn/DB$ head DTC_data.csv
+compound_id,standard_inchi_key,compound_name,synonym,target_id,target_pref_name,gene_names,wildtype_or_mutant,mutation_info,pubmed_id,standard_type,standard_relation,standard_value,standard_units,activity_comment,ep_action_mode,assay_format,assaytype,assay_subtype,inhibitor_type,detection_tech,assay_cell_line,compound_concentration_value,compound_concentration_value_unit,substrate_type,substrate_relation,substrate_value,substrate_units,assay_description,title,journal,doc_type,annotation_comments
+CHEMBL3545284,"",CERDULATINIB,,Q9Y4K4,MITOGEN-ACTIVATED PROTEIN KINASE KINASE KINASE KINASE 5,MAP4K5,,,29191878,KDAPP,=,19155.14,NM,,inhibition,cell_free,binding,binding_reversible,"",label_free_technology,"K-562, COLO 205, MV-4-11, SK-N-BE(2)",3-30,NM-UM,,,,,LC-MS/MS BASED KINOBEADS COMPETITIVE PULL-DOWN ASSAY,THE TARGET LANDSCAPE OF CLINICAL KINASE DRUGS,SCIENCE,,
+```
+
+## ChEMBL 
+
+* Visit, https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/ and download the MySQL data and convert the database 
+into a JSON file 
+* JSON file can then be 
 ```
  
 
