@@ -89,10 +89,11 @@ three end_points (ChEMBL definition;  ) IC50, Ki and EC50 and three data sources
 System tested: Google Cloud Platform (GCP), Intel Haswell CPU with 4vCPUs and 100GB memory. 
 Peak memory usuage was ~80 GB. Here is the time to extract and curate data.
 
+```
 real    51m49.211s
 user    50m9.502s
 sys     0m59.148s
-
+```
 
 ## Details on how to extract data from the databases
 
