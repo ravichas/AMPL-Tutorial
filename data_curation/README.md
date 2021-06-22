@@ -12,14 +12,25 @@ machine-learning ready datasets (combined and individuval) along with some basic
 AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
 
 ### Instructions to run the script:
+* Install AMPL 
 * Download the tar file, `MultipleSourceCurn.tar.gz`
 * Unar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
-* It will create MultipleSourceCurn folder with two sub-folders, DB and sourceCuration 
-   * DB folder files, due to large size, will not be included in the tarball 
-   * Users have to download it from the datasources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB is straight-forward. Please see below for details. Please note that  extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
+* It will create MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
+   * `DB` folder files, due to large size, will not be included in the tarball 
+   * Users have to download data from the datasources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straight-forward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
       * https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-download-questions
       * https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-
+* Once the concerned database files are placed in the DB folder 
+* Open a terminal and activate atomsci package using the following command, `conda activate atomsci`
+* Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
+  - Edit the configuration file, `priority_panel_ki.ini` to set the absolute path to `DB` folders
+  - Make sure to include protein targets of your choice. Please note that differnt databases have different convention for using different style for gene names. 
+    o ChEMBL gene list should follow the naming convention as shown in `tar_gene_chembl.txt`
+    o DTC gene list should follow the naming convention as shown in `tar_gene.txt` 
+    o ExCAPE-DB gene list should follow the naming convention as shown `gene_lst_v1.txt`
+* Now, run the following script
+  - `./example.sh >& example.out` 
+  
 ## File structure details of the sourceCuration tar file
 
 Python code: custom_config.py, custom_data_curation.py, target_data_curation.py
