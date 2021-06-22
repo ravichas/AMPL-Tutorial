@@ -69,7 +69,9 @@ MultipleSourceCurn
     ├── [  24]  tar_list.txt
     ├── [ 20K]  target_data_curation.py
     ├── [4.0K]  tempDataKi
+    │   └── This-is-a-Folder-for-output-data
     └── [4.0K]  tempPlotKi
+        └── This-is-a-Folder-for-output-plots-in-pdf
 ```
 
 output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
