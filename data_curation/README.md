@@ -15,22 +15,7 @@ Data input: tar_gene_chembl.txt, tar_gene.txt, gene_lst_v1.txt
 Output folders: tempDataKi, tempPlotKi 
 
 Here is a tree structure of the tar file:
-```
-sourceCuration
-├── custom_config.py
-├── custom_data_curation.py
-├── target_data_curation.py
-├── example.out  (output)
-├── example.sh   (main script)
-├── gene_lst_v1.txt (list of DTC formatted genes)
-├── priority_panel_ki.ini (configuration file)
-├── tar_gene_chembl.txt  (list of chembl genes)
-├── tar_gene.txt (list of excape formatted genes)
-├── tempDataKi
-│   └── This-is-a-Folder-for-output-data
-└── tempPlotKi
-    └── This-is-a-Folder-for-output-plots-in-pdf
-    
+``` 
 MultipleSourceCurn
 ├── [4.0K]  DB
 │   ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
@@ -55,7 +40,7 @@ MultipleSourceCurn
         └── # This-is-a-Folder-for-output-plots-in-pdf
 ```
 
-DB directory details: 
+## DB directory details: 
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
 After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
