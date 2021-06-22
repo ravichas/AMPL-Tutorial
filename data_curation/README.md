@@ -52,11 +52,11 @@ sourceCuration
     
 MultipleSourceCurn
 ├── [4.0K]  DB
-│   ├── [2.1G]  DTC_data.csv
-│   ├── [ 95M]  inchikey_smiles.csv
-│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
-│   ├── [2.1G]  uid2cact.json
-│   └── [557K]  uid2gn_human.json
+│   ├── [2.1G]  DTC_data.csv   # Drug Data Commons (DTC) data 
+│   ├── [ 95M]  inchikey_smiles.csv  # DTC InChi to SMILES mapping list
+│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
+│   ├── [2.1G]  uid2cact.json   # ChEMBL DB
+│   └── [557K]  uid2gn_human.json # ChEMBL DB
 └── [4.0K]  sourceCuration
     ├── [ 555]  custom_config.py
     ├── [ 16K]  custom_data_curation.py
@@ -64,7 +64,7 @@ MultipleSourceCurn
     ├── [ 647]  example.sh
     ├── [  24]  gene_lst_v1.txt
     ├── [2.3K]  priority_panel_ki.ini
-    ├── [  24]  tar_gene.txt
+    ├── [  24]  tar_gene.txt  
     ├── [  36]  tar_gene_chembl.txt
     ├── [  24]  tar_list.txt
     ├── [ 20K]  target_data_curation.py
@@ -73,6 +73,14 @@ MultipleSourceCurn
     └── [4.0K]  tempPlotKi
         └── This-is-a-Folder-for-output-plots-in-pdf
 ```
+
+DB directory details: 
+
+Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
+After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
+file. This will create `MultipleSourceCurn' folder. Please download the concerned files and place them under the 
+DB folder. Make sure the filenames match the filenames listed under `Data
+
 
 output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
 output_img_dir (str) : location to put diagnostic data , currently just distribution of activity values for final set"
