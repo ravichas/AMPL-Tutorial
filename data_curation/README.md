@@ -109,7 +109,8 @@ filename accordingly)
 xz -d pubchem.chembl.dataset4publication_inchi_smiles_v2.tsv.xz 
 
 Warning: the file could take upto ~20 GB. 
-# here is how you can extract a single target (ex. HTR3A) related data.
+
+Here is how you can extract a single target (ex. HTR3A) related data using Linux shell command.
 ```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
 ```
@@ -132,6 +133,4 @@ CHEMBL3545284,"",CERDULATINIB,,Q9Y478,"AMP-ACTIVATED PROTEIN KINASE, BETA-1 SUBU
 into a JSON file 
 * JSON file can then be 
 ```
- 
-x
 
