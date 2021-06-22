@@ -25,9 +25,9 @@ AMPL installation. Plese check AMPL GitHub page for installation, https://github
 * Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
   - Edit the configuration file, `priority_panel_ki.ini` to set the absolute path to `DB` folders
   - Make sure to include protein targets of your choice. Please note that differnt databases have different convention for using different style for gene names. 
-    o ChEMBL gene list should follow the naming convention as shown in `tar_gene_chembl.txt`
-    o DTC gene list should follow the naming convention as shown in `tar_gene.txt` 
-    o ExCAPE-DB gene list should follow the naming convention as shown `gene_lst_v1.txt`
+    * ChEMBL gene list should follow the naming convention as shown in `tar_gene_chembl.txt`
+    * DTC gene list should follow the naming convention as shown in `tar_gene.txt` 
+    * ExCAPE-DB gene list should follow the naming convention as shown `gene_lst_v1.txt`
 * Now, run the following script
   - `./example.sh >& example.out` 
   
