@@ -1,6 +1,6 @@
 # Scope of the ATOM Modeling Pipeline (AMPL) script
 
-To automate the data download from public target binding data from chemoinformatics databases such as ChEMBL, Drug Target Commons (DTC), ExCAPE-DB etc and create 
+To automate the data download from public target binding data from chemoinformatics databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc and create 
 machine-learning ready datasets (combined and individuval) along with some simple Exploratory Data Analysis plots. Users with some effort can add -need Python programming- other input databas sources by extending the code.   
 
 ### Requirements: 
