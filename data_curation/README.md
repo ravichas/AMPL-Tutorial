@@ -11,7 +11,48 @@ machine-learning ready datasets (combined and individuval) along with some basic
 
 AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
 
-### Instructions to run the script:
+## File structure details of the sourceCuration tar file
+
+**Python codes:** `custom_config.py`, `custom_data_curation.py`, `target_data_curation.py`
+**Main driver input and configuration files:** `example.sh`, `priority_panel_ki.ini`
+**Data input:** `tar_gene_chembl.txt`, `tar_gene.txt`, `gene_lst_v1.txt` 
+**Output folders:** `tempDataKi`, `tempPlotKi`
+
+Here is a tree structure of the tar file:  
+``` 
+MultipleSourceCurn
+├── [4.0K]  DB (EMPTY FOLDER, a place-holder for database files)
+└── [4.0K]  sourceCuration
+    ├── [ 555]  custom_config.py
+    ├── [ 16K]  custom_data_curation.py
+    ├── [1.1K]  debug.ipynb
+    ├── [ 647]  example.sh (driver script)
+    ├── [  24]  gene_lst_v1.txt       # input gene list for ExCAPE-DB extraction
+    ├── [2.3K]  priority_panel_ki.ini # Configuration file that contains all the other DB file path
+    ├── [  24]  tar_gene.txt          # input gene list for DTC DB extraction
+    ├── [  36]  tar_gene_chembl.txt   # input gene list for ChEMBL DB extraction)
+    ├── [ 20K]  target_data_curation.py
+    ├── [4.0K]  tempDataKi
+    │   └── # This-is-a-Folder-for-output-data
+    └── [4.0K]  tempPlotKi
+        └── # This-is-a-Folder-for-output-plots-in-pdf
+```
+
+Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
+After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
+file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
+DB folder. Make sure the filenames match the filenames listed in the `priority_panel_ki.ini` file
+
+MultipleSourceCurn
+├── [4.0K]  DB
+    ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
+    ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
+    ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
+    ├── [2.1G]  uid2cact.json         # ChEMBL DB 
+    └── [557K]  uid2gn_human.json     # ChEMBL DB
+
+
+### Instructions for running the script:
 * Install AMPL 
 * Download the tar file, `MultipleSourceCurn.tar.gz`
 * Unar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
@@ -31,45 +72,8 @@ AMPL installation. Plese check AMPL GitHub page for installation, https://github
 * Now, run the following script
   - `./example.sh >& example.out` 
   
-## File structure details of the sourceCuration tar file
-
-Python code: custom_config.py, custom_data_curation.py, target_data_curation.py
-Main driver input and configuration files: example.sh, priority_panel_ki.ini
-Data input: tar_gene_chembl.txt, tar_gene.txt, gene_lst_v1.txt 
-Output folders: tempDataKi, tempPlotKi 
-
-Here is a tree structure of the tar file:
-``` 
-MultipleSourceCurn
-├── [4.0K]  DB
-│   ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
-│   ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
-│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
-│   ├── [2.1G]  uid2cact.json         # ChEMBL DB 
-│   └── [557K]  uid2gn_human.json     # ChEMBL DB
-└── [4.0K]  sourceCuration
-    ├── [ 555]  custom_config.py
-    ├── [ 16K]  custom_data_curation.py
-    ├── [1.1K]  debug.ipynb
-    ├── [ 647]  example.sh (driver script)
-    ├── [  24]  gene_lst_v1.txt       # input gene list for ExCAPE-DB extraction
-    ├── [2.3K]  priority_panel_ki.ini # Configuration file that contains all the other DB file path
-    ├── [  24]  tar_gene.txt          # input gene list for DTC DB extraction
-    ├── [  36]  tar_gene_chembl.txt   # input gene list for ChEMBL DB extraction)
-    ├── [ 20K]  target_data_curation.py
-    ├── [4.0K]  tempDataKi
-    │   └── # This-is-a-Folder-for-output-data
-    └── [4.0K]  tempPlotKi
-        └── # This-is-a-Folder-for-output-plots-in-pdf
-```
 
 ## DB directory details: 
-
-Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
-After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
-file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
-DB folder. Make sure the filenames match the filenames listed under `Data
-
 
 output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
 output_img_dir (str) : location to put diagnostic data , currently just distribution of activity values for final set"
@@ -95,6 +99,8 @@ sys     0m59.148s
 
 Please note that the data files 
 
+# Details on how to extract data from the databases
+
 ## Excape
 
 Visit Excape download site, https://zenodo.org/record/2543724#.YMtnGahKguU,
@@ -114,18 +120,6 @@ awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv 
 Visit http://drgutargetcommons.fimm.fi/ 
 
 ```
-DB
-├── [4.0K]  ChEMBL
-│   └── [4.0K]  raw
-│       ├── [1.1G]  uid2cact.json
-│       └── [557K]  uid2gn_human.json
-├── [4.0K]  DTC
-│   ├── [2.1G]  DTC_data.csv
-│   └── [4.0K]  raw
-│       └── [4.0K]  pubchem_smiles
-│           └── [ 95M]  inchikey_smiles.csv
-└── [4.0K]  excapedb
-    └── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
-```
+ 
 
 
