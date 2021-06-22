@@ -61,12 +61,12 @@ MultipleSourceCurn
     ├── [ 555]  custom_config.py
     ├── [ 16K]  custom_data_curation.py
     ├── [1.1K]  debug.ipynb
-    ├── [ 647]  example.sh
-    ├── [  24]  gene_lst_v1.txt
-    ├── [2.3K]  priority_panel_ki.ini
-    ├── [  24]  tar_gene.txt  
-    ├── [  36]  tar_gene_chembl.txt
-    ├── [  24]  tar_list.txt
+    ├── [ 647]  example.sh (driver script)
+    ├── [  24]  gene_lst_v1.txt  * (input gene list for ExCAPE-DB extraction) * 
+    ├── [2.3K]  priority_panel_ki.ini  (Configuration file that contains all the other DB file path)
+    ├── [  24]  tar_gene.txt  (input gene list)
+    ├── [  36]  tar_gene_chembl.txt (input gene list for ChEMBL DB extraction)
+    ├── [  24]  tar_list.txt   (input gene list for DTC DB extraction)
     ├── [ 20K]  target_data_curation.py
     ├── [4.0K]  tempDataKi
     │   └── This-is-a-Folder-for-output-data
