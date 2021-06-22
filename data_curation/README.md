@@ -52,26 +52,26 @@ sourceCuration
     
 MultipleSourceCurn
 ├── [4.0K]  DB
-│   ├── [2.1G]  DTC_data.csv   # Drug Data Commons (DTC) data 
-│   ├── [ 95M]  inchikey_smiles.csv  # DTC InChi to SMILES mapping list
+│   ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
+│   ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
 │   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
-│   ├── [2.1G]  uid2cact.json   # ChEMBL DB
-│   └── [557K]  uid2gn_human.json # ChEMBL DB
+│   ├── [2.1G]  uid2cact.json         # ChEMBL DB
+│   └── [557K]  uid2gn_human.json     # ChEMBL DB
 └── [4.0K]  sourceCuration
     ├── [ 555]  custom_config.py
     ├── [ 16K]  custom_data_curation.py
     ├── [1.1K]  debug.ipynb
     ├── [ 647]  example.sh (driver script)
-    ├── [  24]  gene_lst_v1.txt  * (input gene list for ExCAPE-DB extraction) * 
-    ├── [2.3K]  priority_panel_ki.ini  (Configuration file that contains all the other DB file path)
-    ├── [  24]  tar_gene.txt  (input gene list)
-    ├── [  36]  tar_gene_chembl.txt (input gene list for ChEMBL DB extraction)
-    ├── [  24]  tar_list.txt   (input gene list for DTC DB extraction)
+    ├── [  24]  gene_lst_v1.txt       # input gene list for ExCAPE-DB extraction
+    ├── [2.3K]  priority_panel_ki.ini # Configuration file that contains all the other DB file path
+    ├── [  24]  tar_gene.txt          # input gene list
+    ├── [  36]  tar_gene_chembl.txt   # input gene list for ChEMBL DB extraction)
+    ├── [  24]  tar_list.txt          # input gene list for DTC DB extraction)
     ├── [ 20K]  target_data_curation.py
     ├── [4.0K]  tempDataKi
-    │   └── This-is-a-Folder-for-output-data
+    │   └── # This-is-a-Folder-for-output-data
     └── [4.0K]  tempPlotKi
-        └── This-is-a-Folder-for-output-plots-in-pdf
+        └── # This-is-a-Folder-for-output-plots-in-pdf
 ```
 
 DB directory details: 
