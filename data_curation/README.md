@@ -49,6 +49,27 @@ sourceCuration
 │   └── This-is-a-Folder-for-output-data
 └── tempPlotKi
     └── This-is-a-Folder-for-output-plots-in-pdf
+    
+MultipleSourceCurn
+├── [4.0K]  DB
+│   ├── [2.1G]  DTC_data.csv
+│   ├── [ 95M]  inchikey_smiles.csv
+│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
+│   ├── [2.1G]  uid2cact.json
+│   └── [557K]  uid2gn_human.json
+└── [4.0K]  sourceCuration
+    ├── [ 555]  custom_config.py
+    ├── [ 16K]  custom_data_curation.py
+    ├── [1.1K]  debug.ipynb
+    ├── [ 647]  example.sh
+    ├── [  24]  gene_lst_v1.txt
+    ├── [2.3K]  priority_panel_ki.ini
+    ├── [  24]  tar_gene.txt
+    ├── [  36]  tar_gene_chembl.txt
+    ├── [  24]  tar_list.txt
+    ├── [ 20K]  target_data_curation.py
+    ├── [4.0K]  tempDataKi
+    └── [4.0K]  tempPlotKi
 ```
 
 output_data_dir (str) : directory location to put combined model ready dataset and rejected compounds.
