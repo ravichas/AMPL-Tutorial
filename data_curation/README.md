@@ -78,7 +78,7 @@ DB directory details:
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
 After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
-file. This will create `MultipleSourceCurn' folder. Please download the concerned files and place them under the 
+file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
 DB folder. Make sure the filenames match the filenames listed under `Data
 
 
