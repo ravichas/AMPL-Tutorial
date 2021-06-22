@@ -1,6 +1,6 @@
 # ATOM Modeling Pipeline (AMPL) target-specific bulk database(s) download script
 
-![](Img/BuldDownload.png) 
+![](./../Img/BuldDownload.png) 
 
 ## Scope and details of the script
 
