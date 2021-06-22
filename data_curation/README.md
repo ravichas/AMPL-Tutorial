@@ -97,9 +97,9 @@ user    50m9.502s
 sys     0m59.148s
 
 
-# Details on how to extract data from the databases
+## Details on how to extract data from the databases
 
-## Excape
+### Excape
 
 Visit Excape download site, https://zenodo.org/record/2543724#.YMtnGahKguU,
 and download the latest dataset. The file will be xz format compressed file. 
@@ -114,7 +114,7 @@ Here is how you can extract a single target (ex. HTR3A) related data using Linux
 ```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
 ```
-## DTC
+### DTC
 
 Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here is a first few lines of the dataset
 
@@ -127,10 +127,9 @@ CHEMBL3545284,"",CERDULATINIB,,Q9Y478,"AMP-ACTIVATED PROTEIN KINASE, BETA-1 SUBU
 
 ```
 
-## ChEMBL 
+### ChEMBL 
 
 * Visit, https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/ and download the MySQL data and convert the database 
-into a JSON file 
-* JSON file can then be 
+into the input JSON file 
 ```
 
