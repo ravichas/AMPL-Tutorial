@@ -115,7 +115,7 @@ awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv 
 ```
 ## DTC
 
-Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here is a first line of the dataset
+Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here is a first few lines of the dataset
 
 ```
 (atomsci) jupyter@ampl-ravi:~/MultipleSourceCurn/DB$ head DTC_data.csv
