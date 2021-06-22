@@ -48,7 +48,7 @@ MultipleSourceCurn
 ├── [4.0K]  DB
     ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
     ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
-    ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # Excape-DB
+    ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # ExCAPE-DB
     ├── [2.1G]  uid2cact.json         # ChEMBL DB 
     └── [557K]  uid2gn_human.json     # ChEMBL DB
 ```
@@ -99,7 +99,7 @@ sys     0m59.148s
 
 ## Details on how to extract data from the databases
 
-### Excape
+### ExCAPE-DB
 
 Visit Excape download site, https://zenodo.org/record/2543724#.YMtnGahKguU,
 and download the latest dataset. The file will be xz format compressed file. 
