@@ -18,23 +18,21 @@ AMPL installation. Plese check AMPL GitHub page for installation, https://github
 * Output folders: `tempDataKi`, `tempPlotKi`
 
 Here is a tree structure of the tar file:  
-``` 
-MultipleSourceCurn
-├── [4.0K]  DB (EMPTY FOLDER, a place-holder for database files)
-└── [4.0K]  sourceCuration
-    ├── [ 555]  custom_config.py
-    ├── [ 16K]  custom_data_curation.py
-    ├── [1.1K]  debug.ipynb
-    ├── [ 647]  example.sh (driver script)
-    ├── [  24]  gene_lst_v1.txt       # input gene list for ExCAPE-DB extraction
-    ├── [2.3K]  priority_panel_ki.ini # Configuration file that contains all the other DB file path
-    ├── [  24]  tar_gene.txt          # input gene list for DTC DB extraction
-    ├── [  36]  tar_gene_chembl.txt   # input gene list for ChEMBL DB extraction)
-    ├── [ 20K]  target_data_curation.py
-    ├── [4.0K]  tempDataKi
-    │   └── # This-is-a-Folder-for-output-data
-    └── [4.0K]  tempPlotKi
-        └── # This-is-a-Folder-for-output-plots-in-pdf
+```     
+MultipleSourceCurn/
+├── [4.0K]  DB                                 # (EMPTY FOLDER, a place-holder for database files) 
+├── [4.0K]  sourceCuration
+│   ├── [4.0K]  CuratedData                    # output directory: Curated Data of all datasets  
+│   ├── [4.0K]  DiagPlot                       # output directory: Diagnostic Plots 
+│   ├── [  36]  chembl_gene_list.txt           # input gene list for ChEMBL DB extraction)
+│   ├── [2.4K]  config_parser.ini              # Configuration file that contains all the other DB file path 
+│   ├── [ 16K]  custom_data_curation.py
+│   ├── [  24]  dtc_gene_list.txt              # input gene list for DTC DB extraction
+│   ├── [ 83K]  runme.out                      # driver file output 
+│   ├── [ 380]  runme.sh                       # driver file  
+│   ├── [  24]  excape_gene_lst.txt            # input gene list for ExCAPE-DB extraction
+│   ├── [2.3K]  priority_panel_ki.ini          
+└── [ 33M]  sourceCuration.tar.gz
 ```
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
