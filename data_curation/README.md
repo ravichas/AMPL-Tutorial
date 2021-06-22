@@ -12,11 +12,10 @@ machine-learning ready datasets (combined and individuval) along with some basic
 AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
 
 ## File structure details of the sourceCuration tar file
-
-* **Python codes:** `custom_config.py`, `custom_data_curation.py`, `target_data_curation.py`
-* **Main driver input and configuration files:** `example.sh`, `priority_panel_ki.ini`
-* **Data input:** `tar_gene_chembl.txt`, `tar_gene.txt`, `gene_lst_v1.txt` 
-* **Output folders:** `tempDataKi`, `tempPlotKi`
+* Python codes: `custom_config.py`, `custom_data_curation.py`, `target_data_curation.py`
+* Main driver input and configuration files: `example.sh`, `priority_panel_ki.ini`
+* Data input: `tar_gene_chembl.txt`, `tar_gene.txt`, `gene_lst_v1.txt` 
+* Output folders: `tempDataKi`, `tempPlotKi`
 
 Here is a tree structure of the tar file:  
 ``` 
