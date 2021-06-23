@@ -127,5 +127,15 @@ CHEMBL3545284,"",CERDULATINIB,,Q9Y478,"AMP-ACTIVATED PROTEIN KINASE, BETA-1 SUBU
 
 * Visit, https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/ and download the MySQL data and convert the database 
 into the input JSON file 
-```
 
+The two json files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
+
+Here are the first few lines of `uid2gn_human.json`
+```
+	uniprot_entry_name	gene_names
+0	1433B_HUMAN	         YWHAB
+1	1433E_HUMAN	         YWHAE
+2	1433F_HUMAN	         YWHAH
+3	1433G_HUMAN	         YWHAG
+4	1433S_HUMAN	         SFN
+```
