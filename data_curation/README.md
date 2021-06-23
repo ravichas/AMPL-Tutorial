@@ -142,7 +142,7 @@ The two json files contain information about binding data for different ChEMBL a
 4	1433S_HUMAN	         SFN
 ```
 
-uid2catn.json 
+`uid2catn.json` 
 
 ```
 	chemicals	                     smiles	                             pChEMBL	activity	relation	unit	    assay_id	type
