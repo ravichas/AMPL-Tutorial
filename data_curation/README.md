@@ -35,8 +35,8 @@ MultipleSourceCurn/
 │   ├── [ 83K]  runme.out                      # driver file output 
 │   ├── [ 380]  runme.sh                       # driver file  
 │   ├── [  24]  excape_gene_lst.txt            # input gene list for ExCAPE-DB extraction
-│   ├── [2.3K]  priority_panel_ki.ini          
-└── [ 33M]  sourceCuration.tar.gz
+└── ├── [2.3K]  priority_panel_ki.ini          
+ 
 ```
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
