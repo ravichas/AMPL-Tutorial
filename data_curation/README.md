@@ -139,3 +139,13 @@ Here are the first few lines of `uid2gn_human.json`
 3	1433G_HUMAN	         YWHAG
 4	1433S_HUMAN	         SFN
 ```
+
+uid2catn.json 
+
+```
+	chemicals	                     smiles	                             pChEMBL	activity	relation	unit	    assay_id	type
+0	None_CHEMBL117286	Oc1ccc(-c2cc(-c3ccc(O)cc3)cc(-c3ccc(O)cc3)c2)cc1	7.10	80.0	            =	         nM	  CHEMBL658311	  EC50
+1	None_CHEMBL66511	COc1ccc(-c2cccc(-c3ccc(OC)cc3)c2)cc1	                 NaN	10000.0	            >	         nM	  CHEMBL658311	  EC50
+2	None_CHEMBL66279	Oc1ccc(-c2cccc(-c3ccc(O)cc3)c2)cc1	                6.10	800.0	            =	         nM	  CHEMBL658311	  EC50
+3	None_CHEMBL116918	Oc1ccc(-c2ccc(-c3ccc(O)cc3)cc2)cc1	                5.92	1200.0	            =	         nM	  CHEMBL658311	  EC50
+4	None_CHEMBL113704	CC1C(=O)c2cc(O)ccc2OC1c1ccc(O)cc1	                8.40	4.0	            =	         nM	  CHEMBL658311	  EC50
