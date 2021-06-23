@@ -149,3 +149,6 @@ uid2catn.json
 2	None_CHEMBL66279	Oc1ccc(-c2cccc(-c3ccc(O)cc3)c2)cc1	                6.10	800.0	            =	         nM	  CHEMBL658311	  EC50
 3	None_CHEMBL116918	Oc1ccc(-c2ccc(-c3ccc(O)cc3)cc2)cc1	                5.92	1200.0	            =	         nM	  CHEMBL658311	  EC50
 4	None_CHEMBL113704	CC1C(=O)c2cc(O)ccc2OC1c1ccc(O)cc1	                8.40	4.0	            =	         nM	  CHEMBL658311	  EC50
+```
+
+If you have any questions or comments, please raise them via AMPL Issues link, https://github.com/ATOMconsortium/AMPL/issues
