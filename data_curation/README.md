@@ -4,12 +4,11 @@
 
 ## Scope and details of the script
 
-The script automates protein-ligand binding data download for a custom list of targets (protein) from databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc. The script also creates 
-machine-learning ready datasets (combined and individuval) along with some basic Exploratory Data Analysis plots. 
+This Python package automates protein-ligand binding data download for a custom list of targets (protein) from manually curated small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/) etc. The script also creates machine-learning ready datasets (combined and individuval) along with some basic Exploratory Data Analysis plots. 
 
-Please note that the Python scripts has been developed to exploit Python Object Oriented Programming concepts. We envision users to bring in databases of their choice or use other information from the ones refered here (ChEMBL, DTC and/or ExCAPE-DB). Please look at the `custom_data_curation.py` 
+Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the the ones refered in this effort. 
+Users with some effort can add -need Python programming- other input databas sources by extending the `custom_data_curation.py` script.    
 
-Users with some effort can add -need Python programming- other input databas sources by extending the code.   
 (Add a point to indicate that the new users can use OOP to expand the sections to add other DB sources; to be added)
 
 ### Software requirements: 
