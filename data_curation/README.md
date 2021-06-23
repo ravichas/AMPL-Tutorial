@@ -9,8 +9,6 @@ This Python package automates protein-ligand binding data download for a custom 
 Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the the ones refered in this document. 
 Users with some effort can easily -need Python programming- plug-in other input database sources under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
 
-(Add a point to indicate that the new users can use OOP to expand the sections to add other DB sources; to be added)
-
 ### Software requirements: 
 
 AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
