@@ -65,7 +65,7 @@ DB
 * Open a terminal and activate atomsci package using the following command, `conda activate atomsci`
 * Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
   - Edit the configuration file, `config_parser.ini` to set the absolute path to `DB` folders. Also the configuration `end_points` section could be expanded to include `Ki,Kd,IC50,AC50,EC50`
-  - Make sure to include protein targets of your choice. Please note that different databases have a different convention for using different style for gene names. 
+  - Make sure to include protein targets of your choice in the files `*_gene_list.txt`. Please note that different databases adopt different alias names/IDs for referring to genes. For this reason, we have separate DB-specific input files.   
     * ChEMBL gene list should follow the naming convention as shown in `chembl_gene_list.txt`
     * DTC gene list should follow the naming convention as shown in `dtc_gene_list.txt` 
     * ExCAPE-DB gene list should follow the naming convention as shown `excape_gene_list.txt`
