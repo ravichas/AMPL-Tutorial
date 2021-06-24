@@ -6,12 +6,13 @@
 
 This AMPL package automates protein-ligand binding data download for a custom list of targets (protein) from small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/). The script also creates machine-learning ready curated datasets along with some basic Exploratory Data Analysis ([EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis)) plots. 
 
-Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the the ones refered in this document. 
-Users with some effort can easily -need Python programming- plug-in other input database sources under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
+Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the ones refered in this document. 
+Users with some effort can easily -need Python programming- plug-in other input database source data under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
 
-### Software requirements: 
+## Software/hardware requirements: 
 
-AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
+* AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
+* Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2 and CYP3A4 and ~ 52 minutes (see Test Run section for details)
 
 ## File structure details of the sourceCuration tar file
 * Python codes: `custom_data_curation.py`, `target_data_curation.py`
@@ -19,7 +20,7 @@ AMPL installation. Plese check AMPL GitHub page for installation, https://github
 * Data input: `chembl_gene_list.txt`, `dtc_gene_list.txt`, `excape_gene_list.txt` 
 * Output folders: `CuratedData`, `DiagPlot`
 
-Here is a tree structure of the tar file:  
+Here is the tree structure of the `MultipleSource.tar.gz` file:  
 ```     
 MultipleSourceCurn/
 ├── [4.0K]  DB                                 # (EMPTY FOLDER, a place-holder for database files) 
@@ -35,15 +36,16 @@ MultipleSourceCurn/
     └── [ 20K]  target_data_curation.py        # Python script file 
 ```
 
-Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
-After downloading MultipleSourceCurn.tar.gz, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
+Due to large DB directory size (~ 22 GB), its contents are not included in the `MultipleSourceCurn.tar.gz` file. 
+After downloading `MultipleSourceCurn.tar.gz`, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
 file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
-DB folder. Make sure the filenames match the filenames listed in the `priority_panel_ki.ini` file
-
+DB folder. Make sure the filenames match the tags (activity_csv and/or smiles_csv and/or activity_summary) listed in the 
+`config_parser.ini` file.
 ```
-MultipleSourceCurn
-└── [4.0K]  DB
-    ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
+Contents of `DB` folder:
+
+DB
+└── ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
     ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
     ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # ExCAPE-DB
     ├── [2.1G]  uid2cact.json         # ChEMBL DB 
@@ -53,7 +55,7 @@ MultipleSourceCurn
 ### Instructions for running the script:
 * Install AMPL 
 * Download the tar file, `MultipleSourceCurn.tar.gz`
-* Unar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
+* Untar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
 * It will create MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
    * `DB` folder files, due to large size, will not be included in the tarball 
    * Users have to download data from the datasources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straight-forward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
@@ -84,7 +86,7 @@ for the accumulation assay data type (ki, IC50 etc.)
 Here are some details on computational time for a test set of 3 protein targets, CASP9, KCNH2 and CYP3A4 with 
 three end_points (ChEMBL definition;  ) IC50, Ki and EC50 and three data sources, DTC, ExcapeDB and ChEMBL. 
 
-System tested: Google Cloud Platform (GCP), Intel Haswell CPU with 4vCPUs and 100GB memory. 
+System tested: Google Cloud Platform (GCP; https://en.wikipedia.org/wiki/Google_Cloud_Platform), Intel Haswell CPU with 4vCPUs and 100GB memory. 
 Peak memory usuage was ~80 GB. Here is the time to extract and curate data.
 
 ```
@@ -110,6 +112,19 @@ Here is how you can extract a single target (ex. HTR3A) related data using the f
 ```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
 ```
+Here are the first few lines of the dataset
+```
+Ambit_InchiKey  Original_Entry_ID       Entrez_ID       Activity_Flag   pXC50   DB      Original_Assay_ID       Tax_ID  Gene_Symbol     Ortholo
+g_Group InChI   SMILES
+AAAAZQPHATYWOK-YRBRRWAQNA-N     11399331        2064    A       7.19382 pubchem 248914  9606    ERBB2   1346    InChI=1/C32H29ClN6O3S/c1-4-41-2
+8-16-25-22(15-26(28)37-30(40)10-7-13-39(2)3)32(20(17-34)18-35-25)36-21-11-12-27(23(33)14-21)42-19-31-38-24-8-5-6-9-29(24)43-31/h5-12,14-16,18H,
+4,13,19H2,1-3H3,(H,35,36)(H,37,40)/b10-7+/f/h36-37H     ClC=1C=C(NC=2C=3C(N=CC2C#N)=CC(OCC)=C(NC(=O)/C=C/CN(C)C)C3)C=CC1OCC=4SC=5C(N4)=CC=CC5
+AAAAZQPHATYWOK-YRBRRWAQNA-N     CHEMBL175513    1956    A       6.73    chembl20        312997  9606    EGFR    1260    InChI=1/C32H29ClN6O3S/c
+1-4-41-28-16-25-22(15-26(28)37-30(40)10-7-13-39(2)3)32(20(17-34)18-35-25)36-21-11-12-27(23(33)14-21)42-19-31-38-24-8-5-6-9-29(24)43-31/h5-12,14
+-16,18H,4,13,19H2,1-3H3,(H,35,36)(H,37,40)/b10-7+/f/h36-37H     C1=2C(=C(C#N)C=NC1=CC(=C(C2)NC(/C=C/CN(C)C)=O)OCC)NC3=CC(Cl)=C(C=C3)OCC4=NC=5C=
+CC=CC5S4
+```
+
 ### DTC
 
 Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here are the first few lines of the dataset
