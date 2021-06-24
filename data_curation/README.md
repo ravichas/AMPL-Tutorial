@@ -23,35 +23,16 @@ Here is a tree structure of the tar file:
 ```     
 MultipleSourceCurn/
 ├── [4.0K]  DB                                 # (EMPTY FOLDER, a place-holder for database files) 
-├── [4.0K]  sourceCuration
-│   ├── [4.0K]  CuratedData                    # output directory: Curated Data of all datasets  
-│   ├── [4.0K]  DiagPlot                       # output directory: Diagnostic Plots 
-│   ├── [  36]  chembl_gene_list.txt           # input gene list for ChEMBL DB extraction)
-│   ├── [2.4K]  config_parser.ini              # Configuration file that contains all the other DB file path 
-│   ├── [ 16K]  custom_data_curation.py
-│   ├── [  24]  dtc_gene_list.txt              # input gene list for DTC DB extraction
-│   ├── [ 83K]  runme.out                      # driver file output 
-│   ├── [ 380]  runme.sh                       # driver file  
-│   ├── [  24]  excape_gene_lst.txt            # input gene list for ExCAPE-DB extraction
-└── ├── [2.3K]  priority_panel_ki.ini          
- 
-MultipleSourceCurn/
-├── [4.0K]  DB
-│   ├── [2.1G]  DTC_data.csv
-│   ├── [ 95M]  inchikey_smiles.csv
-│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
-│   ├── [2.1G]  uid2cact.json
-│   └── [557K]  uid2gn_human.json
-└── [4.0K]  sourceCuration
-    ├── [4.0K]  CuratedData
-    ├── [4.0K]  DiagPlot
-    ├── [  36]  chembl_gene_list.txt
-    ├── [2.4K]  config_parser.ini
-    ├── [ 16K]  custom_data_curation.py
-    ├── [  24]  dtc_gene_list.txt
-    ├── [  24]  excape_gene_lst.txt
-    ├── [ 380]  runme.sh
-    └── [ 20K]  target_data_curation.py 
+└── [4.0K]  sourceCuration                     # Directory that contains the Python script, input/output files and configuration file
+    ├── [4.0K]  CuratedData                    # output directory: Curated Data of all datasets 
+    ├── [4.0K]  DiagPlot                       # output directory: Diagnostic Plots 
+    ├── [  36]  chembl_gene_list.txt           # input gene list for ChEMBL DB extraction)
+    ├── [2.4K]  config_parser.ini              # Configuration file that contains all the other DB file path 
+    ├── [ 16K]  custom_data_curation.py        # Python script
+    ├── [  24]  dtc_gene_list.txt              # input gene list for DTC DB extraction
+    ├── [  24]  excape_gene_lst.txt            # input gene list for ExCAPE-DB extraction
+    ├── [ 380]  runme.sh                       # driver file 
+    └── [ 20K]  target_data_curation.py        # Python script file 
 ```
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
@@ -61,7 +42,7 @@ DB folder. Make sure the filenames match the filenames listed in the `priority_p
 
 ```
 MultipleSourceCurn
-├── [4.0K]  DB
+└── [4.0K]  DB
     ├── [2.1G]  DTC_data.csv          # Drug Data Commons (DTC) data 
     ├── [ 95M]  inchikey_smiles.csv   # DTC InChi to SMILES mapping list
     ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv  # ExCAPE-DB
