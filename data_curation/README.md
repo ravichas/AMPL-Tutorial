@@ -35,6 +35,23 @@ MultipleSourceCurn/
 │   ├── [  24]  excape_gene_lst.txt            # input gene list for ExCAPE-DB extraction
 └── ├── [2.3K]  priority_panel_ki.ini          
  
+MultipleSourceCurn/
+├── [4.0K]  DB
+│   ├── [2.1G]  DTC_data.csv
+│   ├── [ 95M]  inchikey_smiles.csv
+│   ├── [ 18G]  pubchem.chembl.dataset4publication_inchi_smiles.tsv
+│   ├── [2.1G]  uid2cact.json
+│   └── [557K]  uid2gn_human.json
+└── [4.0K]  sourceCuration
+    ├── [4.0K]  CuratedData
+    ├── [4.0K]  DiagPlot
+    ├── [  36]  chembl_gene_list.txt
+    ├── [2.4K]  config_parser.ini
+    ├── [ 16K]  custom_data_curation.py
+    ├── [  24]  dtc_gene_list.txt
+    ├── [  24]  excape_gene_lst.txt
+    ├── [ 380]  runme.sh
+    └── [ 20K]  target_data_curation.py 
 ```
 
 Due to large DB directory size (~ 22 GB), its contents are not included in the MultipleSourceCurn.tar.gz file. 
