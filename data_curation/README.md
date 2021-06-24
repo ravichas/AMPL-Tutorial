@@ -15,10 +15,12 @@ Users with some effort can easily -need Python programming- plug in other input 
 * Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2, and CYP3A4 and ~ 52 minutes (see Test Run section for details)
 
 ### File structure details of the `MultipleSourceCurn.tar.gz` (archive file in compressed format)
-* Python codes: `custom_data_curation.py`, `target_data_curation.py`
-* Main driver input and configuration files: `runme.sh`, `config_parser.ini`
-* Data input: `chembl_gene_list.txt`, `dtc_gene_list.txt`, `excape_gene_list.txt` 
-* Output folders: `CuratedData`, `DiagPlot`
+* `DB` folder: All database related input files
+* `sourceCuration` Folder: 
+	* Python codes: `custom_data_curation.py`, `target_data_curation.py`
+	* Main driver input and configuration files: `runme.sh`, `config_parser.ini`
+	* Data input: `chembl_gene_list.txt`, `dtc_gene_list.txt`, `excape_gene_list.txt` 
+	* Output folders: `CuratedData`, `DiagPlot`
 
 Here is the tree structure of the `MultipleSourceCurn.tar.gz` file:  
 ```     
