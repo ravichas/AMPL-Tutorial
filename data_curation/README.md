@@ -1,4 +1,4 @@
-# AMPL Protein Target Data Curation Script
+# AMPL Protein Target Bulk Data Curation Script
 
 ![](./../Img/BuldDownload.png) 
 
