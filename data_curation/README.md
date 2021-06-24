@@ -4,15 +4,15 @@
 
 ## Scope and details of the script
 
-This AMPL package automates protein-ligand binding data download for a custom list of targets (protein) from small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/). The script also creates machine-learning ready curated datasets along with some basic Exploratory Data Analysis ([EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis)) plots. 
+This AMPL package automates protein-ligand binding data download for a custom list of targets (protein) from small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/). The script also creates machine-learning-ready curated datasets along with some basic Exploratory Data Analysis ([EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis)) plots. 
 
-Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the ones refered in this document. 
-Users with some effort can easily -need Python programming- plug-in other input database source data under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
+Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the ones referred to in this document. 
+Users with some effort can easily -need Python programming- plug in other input database source data under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
 
 ## Software/hardware requirements: 
 
-* AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
-* Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2 and CYP3A4 and ~ 52 minutes (see Test Run section for details)
+* AMPL installation. Please check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
+* Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2, and CYP3A4 and ~ 52 minutes (see Test Run section for details)
 
 ## File structure details of the `MultipleSource.tar.gz` (archive file in compressed format) file
 * Python codes: `custom_data_curation.py`, `target_data_curation.py`
@@ -36,7 +36,7 @@ MultipleSourceCurn/
     └── [ 20K]  target_data_curation.py        # Python script file 
 ```
 
-Due to large DB directory size (~ 22 GB), its contents are not included in the `MultipleSourceCurn.tar.gz` file. 
+Due to the large DB directory size (~ 22 GB), its contents are not included in the `MultipleSourceCurn.tar.gz` file. 
 After downloading `MultipleSourceCurn.tar.gz`, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
 file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
 DB folder. Make sure the filenames match the tags (activity_csv and/or smiles_csv and/or activity_summary) listed in the 
@@ -56,20 +56,20 @@ DB
 * Install AMPL 
 * Download the tar file, `MultipleSourceCurn.tar.gz`
 * Untar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
-* It will create MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
+* It will create a MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
    * `DB` folder files, due to large size, will not be included in the tarball 
-   * Users have to download data from the datasources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straight-forward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
+   * Users have to download data from the data sources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straightforward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
       * https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-download-questions
       * https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
 * Once the concerned database files are placed in the DB folder 
 * Open a terminal and activate atomsci package using the following command, `conda activate atomsci`
 * Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
   - Edit the configuration file, `config_parser.ini` to set the absolute path to `DB` folders. Also the configuration `end_points` section could be expanded to include `Ki,Kd,IC50,AC50,EC50`
-  - Make sure to include protein targets of your choice. Please note that differnt databases have different convention for using different style for gene names. 
+  - Make sure to include protein targets of your choice. Please note that different databases have a different convention for using different style for gene names. 
     * ChEMBL gene list should follow the naming convention as shown in `chembl_gene_list.txt`
     * DTC gene list should follow the naming convention as shown in `dtc_gene_list.txt` 
     * ExCAPE-DB gene list should follow the naming convention as shown `excape_gene_list.txt`
-* After completing the above mentioned steps, run the following script
+* After completing the above-mentioned steps, run the following script
   - `./runme.sh >& log.out` 
   
 
