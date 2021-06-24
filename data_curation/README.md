@@ -145,7 +145,7 @@ into the input JSON file
 
 The two json files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
 
-`uid2gn_human.json`: Here are the first few lines of the file. This file can be downloaded from UniProt webbrowser
+`uid2gn_human.json`: This file can be downloaded from UniProt webbrowser. Here are the first few lines of the file. 
 ```
 	uniprot_entry_name	gene_names
 0	1433B_HUMAN	         YWHAB
