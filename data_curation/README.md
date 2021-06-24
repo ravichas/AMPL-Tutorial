@@ -14,13 +14,13 @@ Users with some effort can easily -need Python programming- plug in other input 
 * AMPL installation. Please check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
 * Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2, and CYP3A4 and ~ 52 minutes (see Test Run section for details)
 
-## File structure details of the `MultipleSource.tar.gz` (archive file in compressed format) file
+## File structure details of the `MultipleSourceCurn.tar.gz` (archive file in compressed format) file
 * Python codes: `custom_data_curation.py`, `target_data_curation.py`
 * Main driver input and configuration files: `runme.sh`, `config_parser.ini`
 * Data input: `chembl_gene_list.txt`, `dtc_gene_list.txt`, `excape_gene_list.txt` 
 * Output folders: `CuratedData`, `DiagPlot`
 
-Here is the tree structure of the `MultipleSource.tar.gz` file:  
+Here is the tree structure of the `MultipleSourceCurn.tar.gz` file:  
 ```     
 MultipleSourceCurn/
 ├── [4.0K]  DB                                 # (EMPTY FOLDER, a place-holder for database files) 
