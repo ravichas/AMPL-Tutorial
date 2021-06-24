@@ -95,24 +95,24 @@ user    50m9.502s
 sys     0m59.148s
 ```
 
-## Guidelines on how to extract data (the contents for `DB` database folder) from the databases
+## Guidelines on how to extract data (the contents of the `DB` database folder) from the databases
 
 ### ExCAPE-DB
 
-Visit Excape download site, https://zenodo.org/record/2543724#.YMtnGahKguU,
-and download the latest dataset. The dataset file will be a xz format compressed file. 
+Visit the Excape site, https://zenodo.org/record/2543724#.YMtnGahKguU,
+to download the latest dataset. The dataset file will be a xz format compressed file. 
 To uncompress, use the following command: 
 (At the time of download, v2 was available; please check the downloaded file and replace the 
 filename accordingly)
 xz -d pubchem.chembl.dataset4publication_inchi_smiles_v2.tsv.xz 
 
-Warning: the uncompressed file could take upto ~20 GB. 
+Warning: the uncompressed file could take up to ~20 GB. 
 
 Here is how you can extract a single target (ex. HTR3A) related data using the following Linux shell command,
 ```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
 ```
-Here are the first few lines of the dataset
+Here are the first few lines of the dataset:
 ```
 Ambit_InchiKey  Original_Entry_ID       Entrez_ID       Activity_Flag   pXC50   DB      Original_Assay_ID       Tax_ID  Gene_Symbol     Ortholo
 g_Group InChI   SMILES
@@ -127,7 +127,7 @@ CC=CC5S4
 
 ### DTC
 
-Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here are the first few lines of the dataset
+Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here are the first few lines of the dataset:
 
 ```
 (atomsci) jupyter@ampl-ravi:~/MultipleSourceCurn/DB$ head DTC_data.csv
@@ -143,9 +143,9 @@ CHEMBL3545284,"",CERDULATINIB,,Q9Y478,"AMP-ACTIVATED PROTEIN KINASE, BETA-1 SUBU
 * Visit, https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/ and download the MySQL data and convert the database 
 into the input JSON file 
 
-The two json files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
+The two JSON files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
 
-`uid2gn_human.json`: This file can be downloaded from UniProt webbrowser. Here are the first few lines of the file. 
+`uid2gn_human.json`: This file can be downloaded from UniProt web browser. Here are the first few lines of the file. 
 ```
 	uniprot_entry_name	gene_names
 0	1433B_HUMAN	         YWHAB
