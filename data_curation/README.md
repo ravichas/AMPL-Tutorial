@@ -1,26 +1,26 @@
-# AMPL Protein Target Data Curation Script
+# AMPL Protein Target Bulk Data Curation Script
 
 ![](./../Img/BuldDownload.png) 
 
 ## Scope and details of the script
 
-This AMPL package automates protein-ligand binding data download for a custom list of targets (protein) from small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/). The script also creates machine-learning ready curated datasets along with some basic Exploratory Data Analysis ([EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis)) plots. 
+This AMPL package automates protein-ligand binding data download for a custom list of targets (protein) from small-molecule databases such as ChEMBL (https://www.ebi.ac.uk/chembl/), Drug Target Commons (DTC; https://drugtargetcommons.fimm.fi/), and ExCAPE-DB (https://solr.ideaconsult.net/search/excape/). The script also creates machine-learning-ready curated datasets along with some basic Exploratory Data Analysis ([EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis)) plots. 
 
-Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the ones refered in this document. 
-Users with some effort can easily -need Python programming- plug-in other input database source data under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
+Please note that this package has been developed using Python Object Oriented Programming concepts to provide a flexible open-source environment. We envision users bringing in small-molecule bioactive databases of their choice or use information (features) other than the ones referred to in this document. 
+Users with some effort can easily -need Python programming- plug in other input database source data under `DB` folder and by extending the `custom_data_curation.py` and configuration file, `config_parser.ini` script.    
 
 ## Software/hardware requirements: 
 
-* AMPL installation. Plese check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
-* Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2 and CYP3A4 and ~ 52 minutes (see Test Run section for details)
+* AMPL installation. Please check AMPL GitHub page for installation, https://github.com/ATOMconsortium/AMPL 
+* Memory requirement tips: ~ 80 GB for three targets CASP9, KCNH2, and CYP3A4 and ~ 52 minutes (see Test Run section for details)
 
-## File structure details of the sourceCuration tar file
+### File structure details of the `MultipleSourceCurn.tar.gz` (archive file in compressed format)
 * Python codes: `custom_data_curation.py`, `target_data_curation.py`
 * Main driver input and configuration files: `runme.sh`, `config_parser.ini`
 * Data input: `chembl_gene_list.txt`, `dtc_gene_list.txt`, `excape_gene_list.txt` 
 * Output folders: `CuratedData`, `DiagPlot`
 
-Here is the tree structure of the `MultipleSource.tar.gz` file:  
+Here is the tree structure of the `MultipleSourceCurn.tar.gz` file:  
 ```     
 MultipleSourceCurn/
 ├── [4.0K]  DB                                 # (EMPTY FOLDER, a place-holder for database files) 
@@ -36,7 +36,7 @@ MultipleSourceCurn/
     └── [ 20K]  target_data_curation.py        # Python script file 
 ```
 
-Due to large DB directory size (~ 22 GB), its contents are not included in the `MultipleSourceCurn.tar.gz` file. 
+Due to the large DB directory size (~ 22 GB), its contents are not included in the `MultipleSourceCurn.tar.gz` file. 
 After downloading `MultipleSourceCurn.tar.gz`, use `tar -xzvf MutipleSourceCurn.tar.gz`, to untar/unzip the 
 file. This will create `MultipleSourceCurn` folder. Please download the concerned files and place them under the 
 DB folder. Make sure the filenames match the tags (activity_csv and/or smiles_csv and/or activity_summary) listed in the 
@@ -56,27 +56,27 @@ DB
 * Install AMPL 
 * Download the tar file, `MultipleSourceCurn.tar.gz`
 * Untar/unzip the file using `tar -xzvf MultipleSourceCurn.tar.gz`
-* It will create MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
+* It will create a MultipleSourceCurn folder with two sub-folders, `DB` and `sourceCuration`
    * `DB` folder files, due to large size, will not be included in the tarball 
-   * Users have to download data from the datasources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straight-forward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
+   * Users have to download data from the data sources of their interest, such as DTC, ExCAPE-DB. Downloading the whole DTC and ExCAPE-DB files are straightforward. Please see below for details. Please note that extracting the whole DB from ChEMBL needs some effort. Please check ChEMBL database link shown below for details:
       * https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-download-questions
       * https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
 * Once the concerned database files are placed in the DB folder 
 * Open a terminal and activate atomsci package using the following command, `conda activate atomsci`
 * Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
   - Edit the configuration file, `config_parser.ini` to set the absolute path to `DB` folders. Also the configuration `end_points` section could be expanded to include `Ki,Kd,IC50,AC50,EC50`
-  - Make sure to include protein targets of your choice. Please note that differnt databases have different convention for using different style for gene names. 
+  - Make sure to include protein targets of your choice in the files `*_gene_list.txt`. Please note that different databases adopt different alias names/IDs for referring to genes. For this reason, we have separate DB-specific input files.   
     * ChEMBL gene list should follow the naming convention as shown in `chembl_gene_list.txt`
     * DTC gene list should follow the naming convention as shown in `dtc_gene_list.txt` 
     * ExCAPE-DB gene list should follow the naming convention as shown `excape_gene_list.txt`
-* After completing the above mentioned steps, run the following script
+* After completing the above-mentioned steps, run the following script
   - `./runme.sh >& log.out` 
   
 
 ## DB directory details: 
 
-* **CuratedData** : Directory location to put combined model ready dataset and rejected compounds.
-* **DiagPlot**  : Location to put diagnostic data 
+* **CuratedData** : Directory location where combined model ready dataset and rejected compounds will be stored
+* **DiagPlot**  : Location for diagnostic data plots (pdf format)
     * currently will contain just distribution of activity values for final set
 
 ## Test run: 
@@ -95,24 +95,24 @@ user    50m9.502s
 sys     0m59.148s
 ```
 
-## Guidelines on how to extract data (the contents for `DB` database folder) from the databases
+## Guidelines on how to extract data (the contents of the `DB` database folder) from the databases
 
 ### ExCAPE-DB
 
-Visit Excape download site, https://zenodo.org/record/2543724#.YMtnGahKguU,
-and download the latest dataset. The dataset file will be a xz format compressed file. 
+Visit the Excape site, https://zenodo.org/record/2543724#.YMtnGahKguU,
+to download the latest dataset. The dataset file will be a xz format compressed file. 
 To uncompress, use the following command: 
 (At the time of download, v2 was available; please check the downloaded file and replace the 
 filename accordingly)
 xz -d pubchem.chembl.dataset4publication_inchi_smiles_v2.tsv.xz 
 
-Warning: the uncompressed file could take upto ~20 GB. 
+Warning: the uncompressed file could take up to ~20 GB. 
 
 Here is how you can extract a single target (ex. HTR3A) related data using the following Linux shell command,
 ```
 awk -F'\t' '$9 == "HTR3A"'  pubchem.chembl.dataset4publication_inchi_smiles.tsv > temp
 ```
-Here are the first few lines of the dataset
+Here are the first few lines of the dataset:
 ```
 Ambit_InchiKey  Original_Entry_ID       Entrez_ID       Activity_Flag   pXC50   DB      Original_Assay_ID       Tax_ID  Gene_Symbol     Ortholo
 g_Group InChI   SMILES
@@ -127,7 +127,7 @@ CC=CC5S4
 
 ### DTC
 
-Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here are the first few lines of the dataset
+Visit http://drgutargetcommons.fimm.fi/ and download the whole dataset. Here are the first few lines of the dataset:
 
 ```
 (atomsci) jupyter@ampl-ravi:~/MultipleSourceCurn/DB$ head DTC_data.csv
@@ -143,9 +143,9 @@ CHEMBL3545284,"",CERDULATINIB,,Q9Y478,"AMP-ACTIVATED PROTEIN KINASE, BETA-1 SUBU
 * Visit, https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/ and download the MySQL data and convert the database 
 into the input JSON file 
 
-The two json files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
+The two JSON files contain information about binding data for different ChEMBL assays and UniProt entry name to gene name mapping.
 
-`uid2gn_human.json`: This file can be downloaded from UniProt webbrowser. Here are the first few lines of the file. 
+`uid2gn_human.json`: This file can be downloaded from UniProt web browser. Here are the first few lines of the file. 
 ```
 	uniprot_entry_name	gene_names
 0	1433B_HUMAN	         YWHAB
