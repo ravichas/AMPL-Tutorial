@@ -62,7 +62,7 @@ MultipleSourceCurn
 * Once the concerned database files are placed in the DB folder 
 * Open a terminal and activate atomsci package using the following command, `conda activate atomsci`
 * Change directory to `MultipleSourceCurn/sourceCuration` and do the following things: 
-  - Edit the configuration file, `priority_panel_ki.ini` to set the absolute path to `DB` folders. Also the configuration `end_points` section could be expanded to include `Ki,Kd,IC50,AC50,EC50`
+  - Edit the configuration file, `config_parser.ini` to set the absolute path to `DB` folders. Also the configuration `end_points` section could be expanded to include `Ki,Kd,IC50,AC50,EC50`
   - Make sure to include protein targets of your choice. Please note that differnt databases have different convention for using different style for gene names. 
     * ChEMBL gene list should follow the naming convention as shown in `chembl_gene_list.txt`
     * DTC gene list should follow the naming convention as shown in `dtc_gene_list.txt` 
