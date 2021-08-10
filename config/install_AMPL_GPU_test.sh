@@ -1,6 +1,6 @@
 mkdir github
 cd github
-git clone https://github.com/stewarthe6/AMPL-1.git
+git clone https://github.com/ATOMconsortium/AMPL.git
 
 
 cat << "EOF" > transformations_py.patch
